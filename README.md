@@ -39,4 +39,4 @@ _The table below lists strapping and reserved pins_
 | SW1, SW2, SW3 | SW | Push switch | SW_PUSH_6x3.5mm |
 | LED1 | RGB LED | Red, Green, Blue LED | SMD B1552USUG20D |
 | LED2 | RED LED | Power LED | SMD B1552 |
-| J2 | USB-C | USB-C power and data reciptacle | USB-C_GCT_USB4085-GF-A | 
+| J2 | USB-C | USB 2.0 Type C power and data receptacle | GCT USB4085 GF A | 
