@@ -15,6 +15,8 @@ Schematic is availabe for [download](https://github.com/alexandrebobkov/ESP32-C3
 | EN | 1 | 2 | ESP32-C3 Enable pin |
 | IO9 | 8 | 8 | Strapping pin |
 | IO8 | 5 | 7 | Strapping pin |
+| IO18 | 11 | 13 | USB D- |
+| IO19 | 9 | 14 | USB D+ |
 | IO10 | 7 | 10 | On-board LED |
 | IO3 | 13 | 15 | On-board push switch |
 
