@@ -7,7 +7,7 @@ _ESP32-C3, power supply and breadboard adapter combo._
 ## Components List (Bill of Materials)
 
 | Reference | Value | Description | Item Description |
------
+| --- | --- | --- | --- |
 | C1, C2 | 1uF | Capacitor | SMD |
 | C4 | 10uF | Capacitor | SMD |
 | C5 | 0.1uF | Capacitotr | SMD |
