@@ -10,6 +10,8 @@ Schematic is availabe for [download](https://github.com/alexandrebobkov/ESP32-C3
 
 ### Reserved GPIOs & Pins
 
+_The table below lists strapping and reserved pins_
+
 | GPIO | Physical Pin | Adapter Pin | Description |
 | --- | --- | --- | --- |
 | EN | 1 | 2 | ESP32-C3 Enable pin |
