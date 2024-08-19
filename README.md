@@ -6,7 +6,7 @@ _ESP32-C3, power supply and breadboard adapter combo._
 
 ## Schematic
 
-Schematic is availabe for download https://github.com/alexandrebobkov/ESP32-C3_Breadboard-Adapter/blob/main/schematic/ESP32-C3-BreadBoardAdapter_Schematic.pdf
+Schematic is availabe for [download](https://github.com/alexandrebobkov/ESP32-C3_Breadboard-Adapter/blob/main/schematic/ESP32-C3-BreadBoardAdapter_Schematic.pdf)
 
 ## Components List (Bill of Materials)
 
