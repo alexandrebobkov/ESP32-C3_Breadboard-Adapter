@@ -34,7 +34,7 @@ _The table below lists strapping and reserved pins_
 | R6, R8 | 2k2 | Resistor | SMD |
 | D1, D2 | D | Diode | SMD |
 | U1 | ESP32-C3-WROOM | ESP32 C3 Module | |
-| U2 | AMS1117-3V3 | Voltage regulator 3.3V | |
+| U2 | AMS1117-3V3 | Voltage regulator 3.3V | [Datasheet GCT USB4085 GF A](https://github.com/alexandrebobkov/ESP32-C3_Breadboard-Adapter/blob/main/assets/Voltage-Regulator_AMS1117.PDF) |
 | U3 | L58M05 | Voltage regulator 5.0V | |
 | SW1, SW2, SW3 | SW | Push switch | SW_PUSH_6x3.5mm |
 | LED1 | RGB LED | Red, Green, Blue LED | SMD B1552USUG20D |
