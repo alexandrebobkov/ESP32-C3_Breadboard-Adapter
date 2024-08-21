@@ -1,6 +1,6 @@
 # ESP32-C3_Breadboard-Adapter
 
-_ESP32-C3, power supply and breadboard adapter combo._
+_ESP32-C3 Module, power supply, and breadboard adapter combo._
 
 <img alt="ESP32-Node PCB" src="https://github.com/alexandrebobkov/ESP32-C3_Breadboard-Adapter/blob/main/assets/ESP32-C3-BreadBoardAdapter.jpg" width="75%"/>
 
@@ -18,7 +18,7 @@ _ESP32-C3, power supply and breadboard adapter combo._
 - on-board push switch and LED for your needs;
 
 ## Learning Activities
-_Learn and develop new skills as you build and work with microcontroller combo board._
+_Learn and develop new skills as you build and work with this microcontroller combo board._
 
 ## Schematic
 
