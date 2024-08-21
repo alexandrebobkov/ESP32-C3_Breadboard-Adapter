@@ -17,6 +17,8 @@ _ESP32-C3, power supply and breadboard adapter combo._
 - on-board push switch for Reset and Flash modes
 - on-board push switch and LED for your needs
 
+## Learning Activities
+
 ## Schematic
 
 Schematic is availabe for [download](https://github.com/alexandrebobkov/ESP32-C3_Breadboard-Adapter/blob/main/schematic/ESP32-C3-BreadBoardAdapter_Schematic.pdf)
