@@ -24,7 +24,7 @@ _The table below lists strapping and reserved pins_
 
 ## Components List (Bill of Materials)
 
-| Reference | Value | Description | Item Description |
+| Reference | Value | Description | Reference |
 | --- | --- | --- | --- |
 | C1, C2 | 1uF | Capacitor | SMD |
 | C4 | 10uF | Capacitor | SMD |
