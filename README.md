@@ -61,18 +61,20 @@ _The table below lists strapping and reserved pins_
 
 ```python
 
-import machine
+from machine import Pin
+from machine import Timer
+from utime import sleep_ms
 import time
 
 ONBOARD_LED = 10	# GPIO10, PIN 7
 ONBOARD_BTN = 3		# GPIO3, 13
 
-onboard_led = machine.Pin(ONBOARD_LED, machine.Pin.OUT)
+onboard_led = Pin(ONBOARD_LED, Pin.OUT)
 
-while True:
-    onboard_led.value(1)
-    time.sleep(1)
-    onboard_led.value(0)
-    time.sleep(1)
+def led_interrupt(t):
+    onboard_led.value(not onboard_led.value())
+
+onboard_led_timer = Timer(0)
+onboard_led_timer.init(mode=Timer.PERIODIC,period=1000,callback=led_interrupt)
 
 ```
