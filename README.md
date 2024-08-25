@@ -63,17 +63,19 @@ _The table below lists strapping and reserved pins_
 from machine import Pin
 from machine import Timer
 from utime import sleep_ms
-#import time
 
+# Stated GPIOs correspond to the wiring diagram
 ONBOARD_LED = 10	# GPIO10, PIN 7
 ONBOARD_BTN = 3		# GPIO3, 13
 
 onboard_led = Pin(ONBOARD_LED, Pin.OUT)
 onboard_button = Pin(ONBOARD_BTN, Pin.IN, Pin.PULL_UP)
 
+# Interrupt function to alternate on-board LED state
 def led_interrupt(t):
     onboard_led.value(not onboard_led.value())
     
+# Interrupt function to turn LED ON when on-board button is pressed
 def button_interrupt(pin):
     print("Button was pressed")
     onboard_led.value(1)
