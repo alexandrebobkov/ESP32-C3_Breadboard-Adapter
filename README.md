@@ -59,6 +59,7 @@ _The table below lists strapping and reserved pins_
 
 ### Blinky & Button Test Code
 
+```python
 from machine import Pin
 from machine import Timer
 from utime import sleep_ms
