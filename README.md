@@ -56,3 +56,8 @@ _The table below lists strapping and reserved pins_
 | LED1 | RGB LED | Red, Green, Blue LED | SMD B1552USUG20D |
 | LED2 | RED LED | Power LED | SMD B1552 |
 | J2 | USB-C | USB 2.0 Type C power and data receptacle | [Datasheet: GCT USB4085 GF A](https://github.com/alexandrebobkov/ESP32-C3_Breadboard-Adapter/blob/main/assets/USB-C-usb4085.pdf) <br/> Footprint | 
+
+### Blinky & Button Test Code
+
+```python
+```
