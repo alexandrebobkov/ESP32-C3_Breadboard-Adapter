@@ -60,11 +60,9 @@ _The table below lists strapping and reserved pins_
 ### Blinky & Button Test Code
 
 ```python
-
 from machine import Pin
 from machine import Timer
 from utime import sleep_ms
-import time
 
 ONBOARD_LED = 10	# GPIO10, PIN 7
 ONBOARD_BTN = 3		# GPIO3, 13
@@ -74,7 +72,10 @@ onboard_led = Pin(ONBOARD_LED, Pin.OUT)
 def led_interrupt(t):
     onboard_led.value(not onboard_led.value())
 
-onboard_led_timer = Timer(0)
-onboard_led_timer.init(mode=Timer.PERIODIC,period=1000,callback=led_interrupt)
+def main():
+    onboard_led_timer = Timer(0)
+    onboard_led_timer.init(mode=Timer.PERIODIC,period=1000,callback=led_interrupt)
 
+if __name__ == '__main__':
+    main()
 ```
