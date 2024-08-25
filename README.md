@@ -60,4 +60,7 @@ _The table below lists strapping and reserved pins_
 ### Blinky & Button Test Code
 
 ```python
+import machine
+import time
+
 ```
