@@ -81,10 +81,12 @@ def button_interrupt(pin):
     onboard_led.value(1)
 
 def main():
+    # Initialize timer
     onboard_led_timer = Timer(0)
+    # Assign timer to onboard LED
     onboard_led_timer.init(mode=Timer.PERIODIC,period=1500,callback=led_interrupt)
+    # Assign interrupt to onboard button
     onboard_button.irq(trigger=Pin.IRQ_FALLING, handler=button_interrupt)
 
 if __name__ == '__main__':
     main()
-```
