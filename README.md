@@ -60,18 +60,21 @@ _The table below lists strapping and reserved pins_
 ### Blinky & Button Test Code
 
 ```python
+# Miniature code that uses thread to blink on-board LED
+# and button interrupt to reset LED thread.
+
 from machine import Pin
 from machine import Timer
 from utime import sleep_ms
 
-# Stated GPIOs correspond to the wiring diagram
+# GPIOs for LED and Button, as stated on the schematic
 ONBOARD_LED = 10	# GPIO10, PIN 7
 ONBOARD_BTN = 3		# GPIO3, 13
 
 onboard_led = Pin(ONBOARD_LED, Pin.OUT)
 onboard_button = Pin(ONBOARD_BTN, Pin.IN, Pin.PULL_UP)
 
-# Interrupt function to alternate on-board LED state
+# Interrupt function to toggle on/off the on-board LED
 def led_interrupt(t):
     onboard_led.value(not onboard_led.value())
     
@@ -88,5 +91,6 @@ def main():
     # Assign interrupt to onboard button
     onboard_button.irq(trigger=Pin.IRQ_FALLING, handler=button_interrupt)
 
+# No While Loop
 if __name__ == '__main__':
     main()
