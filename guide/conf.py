@@ -20,8 +20,8 @@ pygments_style = 'sphinx'
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = [
-    'sphinx.ext.viewcode']
+extensions = ['sphinx.ext.viewcode'
+    ,'docxbuilder']
 
 source_suffix = '.rst'
 templates_path = ['_templates']
