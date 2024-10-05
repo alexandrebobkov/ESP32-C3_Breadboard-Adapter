@@ -1,6 +1,9 @@
 About
 ======
 
+.. math::
+    E=mc^2
+    
 **ESP32-C3 Breadboard Power Adapter** is a combo PCB that comes with a power supply and on-board ESP32-C3 microcontroller.
 
 .. CAUTION::

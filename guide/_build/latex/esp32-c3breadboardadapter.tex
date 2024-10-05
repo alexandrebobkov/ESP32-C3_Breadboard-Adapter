@@ -94,15 +94,68 @@ documentation for details.
 
 
 \chapter{About}
-\label{\detokenize{README:about}}\label{\detokenize{README::doc}}
+\label{\detokenize{README:about}}\label{\detokenize{README::doc}}\begin{equation*}
+\begin{split}E=mc^2\end{split}
+\end{equation*}
 \sphinxAtStartPar
 \sphinxstylestrong{ESP32\sphinxhyphen{}C3 Breadboard Power Adapter} is a combo PCB that comes with a power supply and on\sphinxhyphen{}board ESP32\sphinxhyphen{}C3 microcontroller.
 
-\begin{sphinxadmonition}{note}{Note:}
+\begin{sphinxadmonition}{caution}{Caution:}
 \sphinxAtStartPar
 This project is under active development.
 \end{sphinxadmonition}
 
+
+\section{MicroPython Blinky Code}
+\label{\detokenize{README:micropython-blinky-code}}
+\fvset{hllines={, 5, 6, 10, 12,}}%
+\begin{sphinxVerbatim}[commandchars=\\\{\},numbers=left,firstnumber=1,stepnumber=1]
+\PYG{k+kn}{import} \PYG{n+nn}{machine}
+\PYG{k+kn}{from} \PYG{n+nn}{machine} \PYG{k+kn}{import} \PYG{n}{Pin}
+\PYG{k+kn}{import} \PYG{n+nn}{time}\PYG{o}{,} \PYG{n+nn}{math}
+
+\PYG{n}{ONBOARD\PYGZus{}LED} \PYG{o}{=} \PYG{l+m+mi}{10}	\PYG{c+c1}{\PYGZsh{} GPIO10, PIN 7}
+\PYG{n}{ONBOARD\PYGZus{}BTN} \PYG{o}{=} \PYG{l+m+mi}{3}		\PYG{c+c1}{\PYGZsh{} GPIO3, 13}
+
+\PYG{c+c1}{\PYGZsh{} Configure on\PYGZhy{}board LED and push button}
+\PYG{c+c1}{\PYGZsh{} Stated GPIOs correspond to the wiring schematic}
+\PYG{n}{onboard\PYGZus{}button} \PYG{o}{=} \PYG{n}{Pin}\PYG{p}{(}\PYG{n}{ONBOARD\PYGZus{}BTN}\PYG{p}{,} \PYG{n}{Pin}\PYG{o}{.}\PYG{n}{IN}\PYG{p}{,} \PYG{n}{Pin}\PYG{o}{.}\PYG{n}{PULL\PYGZus{}UP}\PYG{p}{)}
+
+\PYG{n}{led} \PYG{o}{=} \PYG{n}{machine}\PYG{o}{.}\PYG{n}{PWM}\PYG{p}{(}\PYG{n}{ONBOARD\PYGZus{}LED}\PYG{p}{,} \PYG{n}{freq}\PYG{o}{=}\PYG{l+m+mi}{1000}\PYG{p}{)}
+
+\PYG{k}{def} \PYG{n+nf}{pulse}\PYG{p}{(}\PYG{n}{l}\PYG{p}{,} \PYG{n}{t}\PYG{p}{)}\PYG{p}{:}
+    \PYG{k}{for} \PYG{n}{i} \PYG{o+ow}{in} \PYG{n+nb}{range}\PYG{p}{(}\PYG{l+m+mi}{20}\PYG{p}{)}\PYG{p}{:}
+        \PYG{n}{l}\PYG{o}{.}\PYG{n}{duty}\PYG{p}{(}\PYG{n+nb}{int}\PYG{p}{(}\PYG{n}{math}\PYG{o}{.}\PYG{n}{sin}\PYG{p}{(}\PYG{n}{i}\PYG{o}{/}\PYG{l+m+mi}{10} \PYG{o}{*} \PYG{n}{math}\PYG{o}{.}\PYG{n}{pi}\PYG{p}{)} \PYG{o}{*} \PYG{l+m+mi}{500} \PYG{o}{+} \PYG{l+m+mi}{500}\PYG{p}{)}\PYG{p}{)}
+        \PYG{n}{time}\PYG{o}{.}\PYG{n}{sleep\PYGZus{}ms}\PYG{p}{(}\PYG{n}{t}\PYG{p}{)}
+    \PYG{n}{l}\PYG{o}{.}\PYG{n}{duty}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{)}
+        
+\PYG{c+c1}{\PYGZsh{} Interrupt function to turn LED ON when on\PYGZhy{}board button is pressed}
+\PYG{k}{def} \PYG{n+nf}{button\PYGZus{}interrupt}\PYG{p}{(}\PYG{n}{pin}\PYG{p}{)}\PYG{p}{:}
+    \PYG{n}{pulse}\PYG{p}{(}\PYG{n}{led}\PYG{p}{,} \PYG{l+m+mi}{70}\PYG{p}{)}
+        
+        
+\PYG{k}{def} \PYG{n+nf}{main}\PYG{p}{(}\PYG{p}{)}\PYG{p}{:}
+    
+    \PYG{c+c1}{\PYGZsh{} Assign interrupt to the on\PYGZhy{}board push button}
+    \PYG{n}{onboard\PYGZus{}button}\PYG{o}{.}\PYG{n}{irq}\PYG{p}{(}\PYG{n}{trigger}\PYG{o}{=}\PYG{n}{Pin}\PYG{o}{.}\PYG{n}{IRQ\PYGZus{}FALLING}\PYG{p}{,} \PYG{n}{handler}\PYG{o}{=}\PYG{n}{button\PYGZus{}interrupt}\PYG{p}{)}
+    
+\PYG{k}{if} \PYG{n+nv+vm}{\PYGZus{}\PYGZus{}name\PYGZus{}\PYGZus{}} \PYG{o}{==} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{\PYGZus{}\PYGZus{}main\PYGZus{}\PYGZus{}}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{:}
+    \PYG{n}{main}\PYG{p}{(}\PYG{p}{)}
+\end{sphinxVerbatim}
+\sphinxresetverbatimhllines
+
+\sphinxstepscope
+
+
+\chapter{Circuit Board}
+\label{\detokenize{pcb:circuit-board}}\label{\detokenize{pcb::doc}}
+\noindent\sphinxincludegraphics[width=400\sphinxpxdimen]{{ESP32-C3-BreadBoardAdapter}.jpg}
+
+\sphinxstepscope
+
+
+\chapter{ESP32\sphinxhyphen{}C3\_Breadboard\sphinxhyphen{}Adapter}
+\label{\detokenize{modules:esp32-c3-breadboard-adapter}}\label{\detokenize{modules::doc}}
 
 
 \renewcommand{\indexname}{Index}
