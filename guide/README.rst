@@ -9,5 +9,4 @@ About
 MicroPython Blinky Code
 
 .. code-block:: python
-    #:linenos:
     ..include:: ../examples/led_pwm.py

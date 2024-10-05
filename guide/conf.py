@@ -12,6 +12,7 @@ author = 'Alexander Bobkov'
 version = 'v1.0'
 release = '2.0'
 today = '%d %b, %Y'
+pygments_style = 'sphinx'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
