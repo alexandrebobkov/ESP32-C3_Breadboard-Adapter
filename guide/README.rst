@@ -10,7 +10,7 @@ MicroPython Blinky Code
 
 .. code-block:: python
     :linenos:
-    _import machine
+    import machine
 from machine import Pin
 import time, math
 
