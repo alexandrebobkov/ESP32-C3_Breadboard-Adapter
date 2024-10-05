@@ -46,7 +46,7 @@ latex_elements = {
 \setlength{\cftsecnumwidth}{1.25cm}
 ''',
     'fncychap': r'\usepackage[Bjornstrup]{fncychap}',
-    footer = 'Alexander Bobkov',
+    'footer ': 'Alexander Bobkov',
     'printindex': r'\footnotesize\raggedright\printindex',
 }
 latex_show_urls = 'footnote'
