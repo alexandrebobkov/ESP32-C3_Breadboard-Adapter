@@ -1,20 +1,9 @@
-About
-======
+import machine
+from machine import Pin
+import time, math
 
-**ESP32-C3 Breadboard Power Adapter** is a combo PCB that comes with a power supply and on-board ESP32-C3 microcontroller.
-
-.. note::
-    This project is under active development.
-
-MicroPython Blinky Code
-
-.. code-block:: python
-    import machine
-    from machine import Pin
-    import time, math
-
-    ONBOARD_LED = 10	# GPIO10, PIN 7
-    ONBOARD_BTN = 3		# GPIO3, 13
+ONBOARD_LED = 10	# GPIO10, PIN 7
+ONBOARD_BTN = 3		# GPIO3, 13
 
 # Configure on-board LED and push button
 # Stated GPIOs correspond to the wiring schematic
@@ -40,4 +29,3 @@ def main():
     
 if __name__ == '__main__':
     main()
-    

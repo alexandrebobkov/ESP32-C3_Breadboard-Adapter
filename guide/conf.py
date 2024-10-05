@@ -6,6 +6,9 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
+import os
+import sys
+
 project = 'ESP32-C3 BreadBoard Adapter'
 copyright = '2024, Alexander Bobkov'
 author = 'Alexander Bobkov'
@@ -47,7 +50,6 @@ latex_elements = {
 \setlength{\cftsecnumwidth}{1.25cm}
 ''',
     'fncychap': r'\usepackage[Bjornstrup]{fncychap}',
-    'footer': r'Alexander Bobkov',
     'printindex': r'\footnotesize\raggedright\printindex',
 }
 latex_show_urls = 'footnote'
