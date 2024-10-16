@@ -17,6 +17,11 @@ _ESP32-C3 Module, power supply, and breadboard adapter combo._
 - on-board push switch for Reset and Flash modes;
 - on-board push switch and LED for your needs;
 
+### ESP32-C3 Module:
+- single-core
+- 32-bit RISC-V MCU @ 160 MHz
+- Rich connectivity for IoT applications: Wi-Fi and Bluetooth 5 (LE)
+
 ## Learning Activities
 _Learn and develop new skills as you build and work with this microcontroller combo board._
 
