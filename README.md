@@ -32,7 +32,7 @@ _Learn and develop new skills as you build and work with this microcontroller co
 
 ## Schematic
 
-Schematic is availabe for [download](https://github.com/alexandrebobkov/ESP32-C3_Breadboard-Adapter/blob/main/schematic/ESP32-C3-BreadBoardAdapter_Schematic.pdf)
+[Schematic](https://github.com/alexandrebobkov/ESP32-C3_Breadboard-Adapter/blob/main/schematic/ESP32-C3-BreadBoardAdapter_Schematic.pdf)
 
 ### Reserved GPIOs & Pins
 
