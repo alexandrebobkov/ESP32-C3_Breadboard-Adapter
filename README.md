@@ -20,7 +20,12 @@ _ESP32-C3 Module, power supply, and breadboard adapter combo._
 ### ESP32-C3 Module:
 - single-core
 - 32-bit RISC-V MCU @ 160 MHz
-- Rich connectivity for IoT applications: Wi-Fi and Bluetooth 5 (LE)
+- 400 KB of internal RAM
+- RSA-3072-based secure boot and the AES-128/256-XTS flash encryption
+- low power-mode support
+- Rich connectivity for IoT applications: Wi-Fi and Bluetooth 5 (LE) with long-range support
+- Bluetooth LE SIG Mesh and Wi-FI Mesh support
+- 22 GPIOs
 
 ## Learning Activities
 _Learn and develop new skills as you build and work with this microcontroller combo board._
