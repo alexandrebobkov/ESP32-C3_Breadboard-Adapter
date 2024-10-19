@@ -6,7 +6,6 @@ MicroPython Blinky Example
 
 .. code-block:: python
     :linenos:
-    :lineno-start: 10
 
     import machine
     from machine import Pin
