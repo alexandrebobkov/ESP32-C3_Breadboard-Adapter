@@ -18,6 +18,7 @@ documentation for details.
    about
    schematic
    examples
+   activities
    bom
 
    modules
