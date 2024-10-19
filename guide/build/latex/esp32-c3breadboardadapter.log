@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.10.18)  19 OCT 2024 01:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.10.18)  19 OCT 2024 01:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -860,31 +860,39 @@ LaTeX Font Info:    Trying to load font information for T1+txtt on input line 8
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/t1txtt.fd
 File: t1txtt.fd 2000/12/15 v3.1
-)
-(./esp32-c3breadboardadapter.ind) [1] (./esp32-c3breadboardadapter.aux)
+) [1] [2
+
+]
+Chapter 1.
+[3] [4
+
+]
+Chapter 2.
+(./esp32-c3breadboardadapter.ind) [5] (./esp32-c3breadboardadapter.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
 Package rerunfilecheck Info: File `esp32-c3breadboardadapter.out' has not chang
 ed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+(rerunfilecheck)             Checksum: CDD2C0538D6CFB3634596E49DDA52680;202.
  ) 
 Here is how much of TeX's memory you used:
- 16601 strings out of 476106
- 281844 string characters out of 5793932
+ 16620 strings out of 476106
+ 282047 string characters out of 5793932
  1925975 words of memory out of 5000000
- 38257 multiletter control sequences out of 15000+600000
- 595126 words of font info for 63 fonts, out of 8000000 for 9000
+ 38268 multiletter control sequences out of 15000+600000
+ 597973 words of font info for 64 fonts, out of 8000000 for 9000
  60 hyphenation exceptions out of 8191
  72i,11n,83p,1214b,517s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf/fonts/type1/public/tex-gyre/qhvb.pfb></usr/share/texmf/font
 s/type1/public/tex-gyre/qhvbi.pfb></usr/share/texmf/fonts/type1/public/tex-gyre
-/qtmr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb>
-Output written on esp32-c3breadboardadapter.pdf (5 pages, 71105 bytes).
+/qtmb.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qtmr.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb>
+Output written on esp32-c3breadboardadapter.pdf (9 pages, 96836 bytes).
 PDF statistics:
- 52 PDF objects out of 1000 (max. 8388607)
- 35 compressed objects within 1 object stream
- 6 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 87 PDF objects out of 1000 (max. 8388607)
+ 65 compressed objects within 1 object stream
+ 12 named destinations out of 1000 (max. 500000)
+ 37 words of extra memory for PDF output out of 10000 (max. 10000000)
 

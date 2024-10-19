@@ -310,6 +310,7 @@ INPUT /usr/share/texmf/fonts/tfm/public/tex-gyre/ec-qhvb.tfm
 INPUT ./esp32-c3breadboardadapter.toc
 INPUT ./esp32-c3breadboardadapter.toc
 INPUT esp32-c3breadboardadapter.toc
+INPUT /usr/share/texmf/fonts/tfm/public/tex-gyre/ec-qtmb.tfm
 OUTPUT esp32-c3breadboardadapter.toc
 INPUT /usr/share/texlive/texmf-dist/tex/latex/txfonts/t1txtt.fd
 INPUT /usr/share/texlive/texmf-dist/tex/latex/txfonts/t1txtt.fd
@@ -323,5 +324,6 @@ INPUT ./esp32-c3breadboardadapter.out
 INPUT ./esp32-c3breadboardadapter.out
 INPUT /usr/share/texmf/fonts/type1/public/tex-gyre/qhvb.pfb
 INPUT /usr/share/texmf/fonts/type1/public/tex-gyre/qhvbi.pfb
+INPUT /usr/share/texmf/fonts/type1/public/tex-gyre/qtmb.pfb
 INPUT /usr/share/texmf/fonts/type1/public/tex-gyre/qtmr.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb
