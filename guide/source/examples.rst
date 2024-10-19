@@ -3,6 +3,8 @@ Examples
 
 MicroPython Blinky Example
 
+.. code-block:: python
+
 import machine
 from machine import Pin
 import time, math
