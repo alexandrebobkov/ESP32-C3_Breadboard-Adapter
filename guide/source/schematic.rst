@@ -9,7 +9,8 @@ GPIOs
    :header-rows: 1
 
    * - Pin
-     - 24
+     - GPIO
+     - Description
    * - GPIO
      - USB +
    * - Description
