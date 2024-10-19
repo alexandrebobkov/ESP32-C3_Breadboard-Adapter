@@ -14,6 +14,7 @@ Features:
  * on-board push switch for Reset and Flash modes;
  * on-board push switch and LED for your needs;
 
+
 ESP32-C3 Module:
  * single-core
  * 32-bit RISC-V MCU @ 160 MHz
