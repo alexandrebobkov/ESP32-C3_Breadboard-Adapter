@@ -114,53 +114,32 @@ documentation for details.
 \PYG{k+kn}{import} \PYG{n+nn}{time}\PYG{o}{,} \PYG{n+nn}{math}
 
 \PYG{n}{ONBOARD\PYGZus{}LED} \PYG{o}{=} \PYG{l+m+mi}{10}    \PYG{c+c1}{\PYGZsh{} GPIO10, PIN 7}
-\PYG{n}{ONBOARD\PYGZus{}BTN} \PYG{o}{=} \PYG{l+m+mi}{3}             \PYG{c+c1}{\PYGZsh{} GPIO3, 13}
+\PYG{n}{ONBOARD\PYGZus{}BTN} \PYG{o}{=} \PYG{l+m+mi}{3}     \PYG{c+c1}{\PYGZsh{} GPIO3, 13}
+
+\PYG{c+c1}{\PYGZsh{} Configure on\PYGZhy{}board LED and push button}
+\PYG{c+c1}{\PYGZsh{} Stated GPIOs correspond to the wiring schematic}
+\PYG{n}{onboard\PYGZus{}button} \PYG{o}{=} \PYG{n}{Pin}\PYG{p}{(}\PYG{n}{ONBOARD\PYGZus{}BTN}\PYG{p}{,} \PYG{n}{Pin}\PYG{o}{.}\PYG{n}{IN}\PYG{p}{,} \PYG{n}{Pin}\PYG{o}{.}\PYG{n}{PULL\PYGZus{}UP}\PYG{p}{)}
+
+\PYG{n}{led} \PYG{o}{=} \PYG{n}{machine}\PYG{o}{.}\PYG{n}{PWM}\PYG{p}{(}\PYG{n}{ONBOARD\PYGZus{}LED}\PYG{p}{,} \PYG{n}{freq}\PYG{o}{=}\PYG{l+m+mi}{1000}\PYG{p}{)}
+
+\PYG{k}{def} \PYG{n+nf}{pulse}\PYG{p}{(}\PYG{n}{l}\PYG{p}{,} \PYG{n}{t}\PYG{p}{)}\PYG{p}{:}
+    \PYG{k}{for} \PYG{n}{i} \PYG{o+ow}{in} \PYG{n+nb}{range}\PYG{p}{(}\PYG{l+m+mi}{20}\PYG{p}{)}\PYG{p}{:}
+        \PYG{n}{l}\PYG{o}{.}\PYG{n}{duty}\PYG{p}{(}\PYG{n+nb}{int}\PYG{p}{(}\PYG{n}{math}\PYG{o}{.}\PYG{n}{sin}\PYG{p}{(}\PYG{n}{i}\PYG{o}{/}\PYG{l+m+mi}{10} \PYG{o}{*} \PYG{n}{math}\PYG{o}{.}\PYG{n}{pi}\PYG{p}{)} \PYG{o}{*} \PYG{l+m+mi}{500} \PYG{o}{+} \PYG{l+m+mi}{500}\PYG{p}{)}\PYG{p}{)}
+        \PYG{n}{time}\PYG{o}{.}\PYG{n}{sleep\PYGZus{}ms}\PYG{p}{(}\PYG{n}{t}\PYG{p}{)}
+    \PYG{n}{l}\PYG{o}{.}\PYG{n}{duty}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} Interrupt function to turn LED ON when on\PYGZhy{}board button is pressed}
+\PYG{k}{def} \PYG{n+nf}{button\PYGZus{}interrupt}\PYG{p}{(}\PYG{n}{pin}\PYG{p}{)}\PYG{p}{:}
+    \PYG{n}{pulse}\PYG{p}{(}\PYG{n}{led}\PYG{p}{,} \PYG{l+m+mi}{70}\PYG{p}{)}
+
+\PYG{k}{def} \PYG{n+nf}{main}\PYG{p}{(}\PYG{p}{)}\PYG{p}{:}
+
+    \PYG{c+c1}{\PYGZsh{} Assign interrupt to the on\PYGZhy{}board push button}
+    \PYG{n}{onboard\PYGZus{}button}\PYG{o}{.}\PYG{n}{irq}\PYG{p}{(}\PYG{n}{trigger}\PYG{o}{=}\PYG{n}{Pin}\PYG{o}{.}\PYG{n}{IRQ\PYGZus{}FALLING}\PYG{p}{,} \PYG{n}{handler}\PYG{o}{=}\PYG{n}{button\PYGZus{}interrupt}\PYG{p}{)}
+
+\PYG{k}{if} \PYG{n+nv+vm}{\PYGZus{}\PYGZus{}name\PYGZus{}\PYGZus{}} \PYG{o}{==} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{\PYGZus{}\PYGZus{}main\PYGZus{}\PYGZus{}}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{:}
+    \PYG{n}{main}\PYG{p}{(}\PYG{p}{)}
 \end{sphinxVerbatim}
-
-\sphinxAtStartPar
-\# Configure on\sphinxhyphen{}board LED and push button
-\# Stated GPIOs correspond to the wiring schematic
-onboard\_button = Pin(ONBOARD\_BTN, Pin.IN, Pin.PULL\_UP)
-
-\sphinxAtStartPar
-led = machine.PWM(ONBOARD\_LED, freq=1000)
-\begin{description}
-\sphinxlineitem{def pulse(l, t):}\begin{description}
-\sphinxlineitem{for i in range(20):}
-\sphinxAtStartPar
-l.duty(int(math.sin(i/10 * math.pi) * 500 + 500))
-time.sleep\_ms(t)
-
-\end{description}
-
-\sphinxAtStartPar
-l.duty(0)
-
-\end{description}
-
-\sphinxAtStartPar
-\# Interrupt function to turn LED ON when on\sphinxhyphen{}board button is pressed
-def button\_interrupt(pin):
-\begin{quote}
-
-\sphinxAtStartPar
-pulse(led, 70)
-\end{quote}
-
-\sphinxAtStartPar
-def main():
-\begin{quote}
-
-\sphinxAtStartPar
-\# Assign interrupt to the on\sphinxhyphen{}board push button
-onboard\_button.irq(trigger=Pin.IRQ\_FALLING, handler=button\_interrupt)
-\end{quote}
-\begin{description}
-\sphinxlineitem{if \_\_name\_\_ == ‘\_\_main\_\_’:}
-\sphinxAtStartPar
-main()
-
-\end{description}
 
 \sphinxstepscope
 
