@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.10.18)  19 OCT 2024 01:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.10.18)  19 OCT 2024 01:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -868,20 +868,28 @@ Chapter 1.
 
 ]
 Chapter 2.
-(./esp32-c3breadboardadapter.ind) [5] (./esp32-c3breadboardadapter.aux)
+[5] [6
+
+]
+Chapter 3.
+[7] [8
+
+]
+Chapter 4.
+(./esp32-c3breadboardadapter.ind) [9] (./esp32-c3breadboardadapter.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
 Package rerunfilecheck Info: File `esp32-c3breadboardadapter.out' has not chang
 ed.
-(rerunfilecheck)             Checksum: CDD2C0538D6CFB3634596E49DDA52680;202.
+(rerunfilecheck)             Checksum: BD67445E8DD2CB204CC2BEB448979DF2;373.
  ) 
 Here is how much of TeX's memory you used:
- 16620 strings out of 476106
- 282047 string characters out of 5793932
+ 16632 strings out of 476106
+ 282182 string characters out of 5793932
  1925975 words of memory out of 5000000
- 38268 multiletter control sequences out of 15000+600000
+ 38274 multiletter control sequences out of 15000+600000
  597973 words of font info for 64 fonts, out of 8000000 for 9000
  60 hyphenation exceptions out of 8191
  72i,11n,83p,1214b,517s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -889,10 +897,10 @@ Here is how much of TeX's memory you used:
 s/type1/public/tex-gyre/qhvbi.pfb></usr/share/texmf/fonts/type1/public/tex-gyre
 /qtmb.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qtmr.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb>
-Output written on esp32-c3breadboardadapter.pdf (9 pages, 96836 bytes).
+Output written on esp32-c3breadboardadapter.pdf (13 pages, 100905 bytes).
 PDF statistics:
- 87 PDF objects out of 1000 (max. 8388607)
- 65 compressed objects within 1 object stream
- 12 named destinations out of 1000 (max. 500000)
- 37 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 115 PDF objects out of 1000 (max. 8388607)
+ 89 compressed objects within 1 object stream
+ 18 named destinations out of 1000 (max. 500000)
+ 53 words of extra memory for PDF output out of 10000 (max. 10000000)
 

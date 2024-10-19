@@ -16,5 +16,7 @@ documentation for details.
    :caption: Contents:
 
    about
+   schematic
+   examples
    bom
 
