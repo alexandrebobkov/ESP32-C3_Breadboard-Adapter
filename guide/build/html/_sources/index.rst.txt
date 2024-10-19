@@ -20,6 +20,8 @@ documentation for details.
    examples
    bom
 
+   modules
+
 Index
 =====
 
