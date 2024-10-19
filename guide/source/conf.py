@@ -20,19 +20,6 @@ templates_path = ['_templates']
 exclude_patterns = []
 
 # -- Options for PDF output 
-latex_engine = 'xelatex'
-latex_elements = {
-    'passoptionstopackages': r'''
-\PassOptionsToPackage{svgnames}{xcolor}
-''',
-    'fontpkg': r'''
-\setmainfont{DejaVu Serif}
-\setsansfont{DejaVu Sans}
-\setmonofont{DejaVu Sans Mono}
-''',
-}
-
-
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
