@@ -12,6 +12,5 @@ GPIOs
      - GPIO
      - Description
    * - GPIO
-     - USB +
-   * - Description
-     - USB data
+   * - USB +
+   * - USB data
