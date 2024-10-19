@@ -38,36 +38,36 @@
 <h1>Examples<a class="headerlink" href="#examples" title="Link to this heading">¶</a></h1>
 <section id="micropython-blinky-example">
 <h2>MicroPython Blinky Example<a class="headerlink" href="#micropython-blinky-example" title="Link to this heading">¶</a></h2>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos">10</span><span class="kn">import</span> <span class="nn">machine</span>
-<span class="linenos">11</span><span class="kn">from</span> <span class="nn">machine</span> <span class="kn">import</span> <span class="n">Pin</span>
-<span class="linenos">12</span><span class="kn">import</span> <span class="nn">time</span><span class="o">,</span> <span class="nn">math</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="kn">import</span> <span class="nn">machine</span>
+<span class="linenos"> 2</span><span class="kn">from</span> <span class="nn">machine</span> <span class="kn">import</span> <span class="n">Pin</span>
+<span class="linenos"> 3</span><span class="kn">import</span> <span class="nn">time</span><span class="o">,</span> <span class="nn">math</span>
+<span class="linenos"> 4</span>
+<span class="linenos"> 5</span><span class="n">ONBOARD_LED</span> <span class="o">=</span> <span class="mi">10</span>    <span class="c1"># GPIO10, PIN 7</span>
+<span class="linenos"> 6</span><span class="n">ONBOARD_BTN</span> <span class="o">=</span> <span class="mi">3</span>     <span class="c1"># GPIO3, 13</span>
+<span class="linenos"> 7</span>
+<span class="linenos"> 8</span><span class="c1"># Configure on-board LED and push button</span>
+<span class="linenos"> 9</span><span class="c1"># Stated GPIOs correspond to the wiring schematic</span>
+<span class="linenos">10</span><span class="n">onboard_button</span> <span class="o">=</span> <span class="n">Pin</span><span class="p">(</span><span class="n">ONBOARD_BTN</span><span class="p">,</span> <span class="n">Pin</span><span class="o">.</span><span class="n">IN</span><span class="p">,</span> <span class="n">Pin</span><span class="o">.</span><span class="n">PULL_UP</span><span class="p">)</span>
+<span class="linenos">11</span>
+<span class="linenos">12</span><span class="n">led</span> <span class="o">=</span> <span class="n">machine</span><span class="o">.</span><span class="n">PWM</span><span class="p">(</span><span class="n">ONBOARD_LED</span><span class="p">,</span> <span class="n">freq</span><span class="o">=</span><span class="mi">1000</span><span class="p">)</span>
 <span class="linenos">13</span>
-<span class="linenos">14</span><span class="n">ONBOARD_LED</span> <span class="o">=</span> <span class="mi">10</span>    <span class="c1"># GPIO10, PIN 7</span>
-<span class="linenos">15</span><span class="n">ONBOARD_BTN</span> <span class="o">=</span> <span class="mi">3</span>     <span class="c1"># GPIO3, 13</span>
-<span class="linenos">16</span>
-<span class="linenos">17</span><span class="c1"># Configure on-board LED and push button</span>
-<span class="linenos">18</span><span class="c1"># Stated GPIOs correspond to the wiring schematic</span>
-<span class="linenos">19</span><span class="n">onboard_button</span> <span class="o">=</span> <span class="n">Pin</span><span class="p">(</span><span class="n">ONBOARD_BTN</span><span class="p">,</span> <span class="n">Pin</span><span class="o">.</span><span class="n">IN</span><span class="p">,</span> <span class="n">Pin</span><span class="o">.</span><span class="n">PULL_UP</span><span class="p">)</span>
-<span class="linenos">20</span>
-<span class="linenos">21</span><span class="n">led</span> <span class="o">=</span> <span class="n">machine</span><span class="o">.</span><span class="n">PWM</span><span class="p">(</span><span class="n">ONBOARD_LED</span><span class="p">,</span> <span class="n">freq</span><span class="o">=</span><span class="mi">1000</span><span class="p">)</span>
-<span class="linenos">22</span>
-<span class="linenos">23</span><span class="k">def</span> <span class="nf">pulse</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="n">t</span><span class="p">):</span>
-<span class="linenos">24</span>    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">20</span><span class="p">):</span>
-<span class="linenos">25</span>        <span class="n">l</span><span class="o">.</span><span class="n">duty</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">i</span><span class="o">/</span><span class="mi">10</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">pi</span><span class="p">)</span> <span class="o">*</span> <span class="mi">500</span> <span class="o">+</span> <span class="mi">500</span><span class="p">))</span>
-<span class="linenos">26</span>        <span class="n">time</span><span class="o">.</span><span class="n">sleep_ms</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
-<span class="linenos">27</span>    <span class="n">l</span><span class="o">.</span><span class="n">duty</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="linenos">14</span><span class="k">def</span> <span class="nf">pulse</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="n">t</span><span class="p">):</span>
+<span class="linenos">15</span>    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">20</span><span class="p">):</span>
+<span class="linenos">16</span>        <span class="n">l</span><span class="o">.</span><span class="n">duty</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">i</span><span class="o">/</span><span class="mi">10</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">pi</span><span class="p">)</span> <span class="o">*</span> <span class="mi">500</span> <span class="o">+</span> <span class="mi">500</span><span class="p">))</span>
+<span class="linenos">17</span>        <span class="n">time</span><span class="o">.</span><span class="n">sleep_ms</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
+<span class="linenos">18</span>    <span class="n">l</span><span class="o">.</span><span class="n">duty</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="linenos">19</span>
+<span class="linenos">20</span><span class="c1"># Interrupt function to turn LED ON when on-board button is pressed</span>
+<span class="linenos">21</span><span class="k">def</span> <span class="nf">button_interrupt</span><span class="p">(</span><span class="n">pin</span><span class="p">):</span>
+<span class="linenos">22</span>    <span class="n">pulse</span><span class="p">(</span><span class="n">led</span><span class="p">,</span> <span class="mi">70</span><span class="p">)</span>
+<span class="linenos">23</span>
+<span class="linenos">24</span><span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+<span class="linenos">25</span>
+<span class="linenos">26</span>    <span class="c1"># Assign interrupt to the on-board push button</span>
+<span class="linenos">27</span>    <span class="n">onboard_button</span><span class="o">.</span><span class="n">irq</span><span class="p">(</span><span class="n">trigger</span><span class="o">=</span><span class="n">Pin</span><span class="o">.</span><span class="n">IRQ_FALLING</span><span class="p">,</span> <span class="n">handler</span><span class="o">=</span><span class="n">button_interrupt</span><span class="p">)</span>
 <span class="linenos">28</span>
-<span class="linenos">29</span><span class="c1"># Interrupt function to turn LED ON when on-board button is pressed</span>
-<span class="linenos">30</span><span class="k">def</span> <span class="nf">button_interrupt</span><span class="p">(</span><span class="n">pin</span><span class="p">):</span>
-<span class="linenos">31</span>    <span class="n">pulse</span><span class="p">(</span><span class="n">led</span><span class="p">,</span> <span class="mi">70</span><span class="p">)</span>
-<span class="linenos">32</span>
-<span class="linenos">33</span><span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
-<span class="linenos">34</span>
-<span class="linenos">35</span>    <span class="c1"># Assign interrupt to the on-board push button</span>
-<span class="linenos">36</span>    <span class="n">onboard_button</span><span class="o">.</span><span class="n">irq</span><span class="p">(</span><span class="n">trigger</span><span class="o">=</span><span class="n">Pin</span><span class="o">.</span><span class="n">IRQ_FALLING</span><span class="p">,</span> <span class="n">handler</span><span class="o">=</span><span class="n">button_interrupt</span><span class="p">)</span>
-<span class="linenos">37</span>
-<span class="linenos">38</span><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
-<span class="linenos">39</span>    <span class="n">main</span><span class="p">()</span>
+<span class="linenos">29</span><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+<span class="linenos">30</span>    <span class="n">main</span><span class="p">()</span>
 </pre></div>
 </div>
 </section>
