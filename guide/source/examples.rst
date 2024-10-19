@@ -8,9 +8,9 @@ MicroPython Blinky Example
 
     code
 
-import machine
-from machine import Pin
-import time, math
+    import machine
+    from machine import Pin
+    import time, math
 
 ONBOARD_LED = 10	# GPIO10, PIN 7
 ONBOARD_BTN = 3		# GPIO3, 13
