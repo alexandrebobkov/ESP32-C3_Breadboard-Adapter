@@ -38,8 +38,14 @@
 <h1>Examples<a class="headerlink" href="#examples" title="Link to this heading">¶</a></h1>
 <section id="micropython-blinky-example">
 <h2>MicroPython Blinky Example<a class="headerlink" href="#micropython-blinky-example" title="Link to this heading">¶</a></h2>
-<p>ONBOARD_LED = 10        # GPIO10, PIN 7
-ONBOARD_BTN = 3         # GPIO3, 13</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="kn">import</span> <span class="nn">machine</span>
+<span class="linenos">2</span><span class="kn">from</span> <span class="nn">machine</span> <span class="kn">import</span> <span class="n">Pin</span>
+<span class="linenos">3</span><span class="kn">import</span> <span class="nn">time</span><span class="o">,</span> <span class="nn">math</span>
+<span class="linenos">4</span>
+<span class="linenos">5</span><span class="n">ONBOARD_LED</span> <span class="o">=</span> <span class="mi">10</span>    <span class="c1"># GPIO10, PIN 7</span>
+<span class="linenos">6</span><span class="n">ONBOARD_BTN</span> <span class="o">=</span> <span class="mi">3</span>             <span class="c1"># GPIO3, 13</span>
+</pre></div>
+</div>
 <p># Configure on-board LED and push button
 # Stated GPIOs correspond to the wiring schematic
 onboard_button = Pin(ONBOARD_BTN, Pin.IN, Pin.PULL_UP)</p>

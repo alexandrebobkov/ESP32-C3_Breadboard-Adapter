@@ -108,9 +108,14 @@ documentation for details.
 
 \section{MicroPython Blinky Example}
 \label{\detokenize{examples:micropython-blinky-example}}
-\sphinxAtStartPar
-ONBOARD\_LED = 10        \# GPIO10, PIN 7
-ONBOARD\_BTN = 3         \# GPIO3, 13
+\begin{sphinxVerbatim}[commandchars=\\\{\},numbers=left,firstnumber=1,stepnumber=1]
+\PYG{k+kn}{import} \PYG{n+nn}{machine}
+\PYG{k+kn}{from} \PYG{n+nn}{machine} \PYG{k+kn}{import} \PYG{n}{Pin}
+\PYG{k+kn}{import} \PYG{n+nn}{time}\PYG{o}{,} \PYG{n+nn}{math}
+
+\PYG{n}{ONBOARD\PYGZus{}LED} \PYG{o}{=} \PYG{l+m+mi}{10}    \PYG{c+c1}{\PYGZsh{} GPIO10, PIN 7}
+\PYG{n}{ONBOARD\PYGZus{}BTN} \PYG{o}{=} \PYG{l+m+mi}{3}             \PYG{c+c1}{\PYGZsh{} GPIO3, 13}
+\end{sphinxVerbatim}
 
 \sphinxAtStartPar
 \# Configure on\sphinxhyphen{}board LED and push button
