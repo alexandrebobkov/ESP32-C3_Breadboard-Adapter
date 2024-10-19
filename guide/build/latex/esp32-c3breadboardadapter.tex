@@ -105,6 +105,63 @@ documentation for details.
 
 \chapter{Examples}
 \label{\detokenize{examples:examples}}\label{\detokenize{examples::doc}}
+\sphinxAtStartPar
+MicroPython Blinky Example
+
+\sphinxAtStartPar
+import machine
+from machine import Pin
+import time, math
+
+\sphinxAtStartPar
+ONBOARD\_LED = 10        \# GPIO10, PIN 7
+ONBOARD\_BTN = 3         \# GPIO3, 13
+
+\sphinxAtStartPar
+\# Configure on\sphinxhyphen{}board LED and push button
+\# Stated GPIOs correspond to the wiring schematic
+onboard\_button = Pin(ONBOARD\_BTN, Pin.IN, Pin.PULL\_UP)
+
+\sphinxAtStartPar
+led = machine.PWM(ONBOARD\_LED, freq=1000)
+\begin{description}
+\sphinxlineitem{def pulse(l, t):}\begin{description}
+\sphinxlineitem{for i in range(20):}
+\sphinxAtStartPar
+l.duty(int(math.sin(i/10 * math.pi) * 500 + 500))
+time.sleep\_ms(t)
+
+\end{description}
+
+\sphinxAtStartPar
+l.duty(0)
+
+\end{description}
+
+\sphinxAtStartPar
+\# Interrupt function to turn LED ON when on\sphinxhyphen{}board button is pressed
+def button\_interrupt(pin):
+\begin{quote}
+
+\sphinxAtStartPar
+pulse(led, 70)
+\end{quote}
+
+\sphinxAtStartPar
+def main():
+\begin{quote}
+
+\sphinxAtStartPar
+\# Assign interrupt to the on\sphinxhyphen{}board push button
+onboard\_button.irq(trigger=Pin.IRQ\_FALLING, handler=button\_interrupt)
+\end{quote}
+\begin{description}
+\sphinxlineitem{if \_\_name\_\_ == ‘\_\_main\_\_’:}
+\sphinxAtStartPar
+main()
+
+\end{description}
+
 \sphinxstepscope
 
 

@@ -36,6 +36,39 @@
             
   <section id="examples">
 <h1>Examples<a class="headerlink" href="#examples" title="Link to this heading">¶</a></h1>
+<p>MicroPython Blinky Example</p>
+<p>import machine
+from machine import Pin
+import time, math</p>
+<p>ONBOARD_LED = 10        # GPIO10, PIN 7
+ONBOARD_BTN = 3         # GPIO3, 13</p>
+<p># Configure on-board LED and push button
+# Stated GPIOs correspond to the wiring schematic
+onboard_button = Pin(ONBOARD_BTN, Pin.IN, Pin.PULL_UP)</p>
+<p>led = machine.PWM(ONBOARD_LED, freq=1000)</p>
+<dl>
+<dt>def pulse(l, t):</dt><dd><dl class="simple">
+<dt>for i in range(20):</dt><dd><p>l.duty(int(math.sin(i/10 * math.pi) * 500 + 500))
+time.sleep_ms(t)</p>
+</dd>
+</dl>
+<p>l.duty(0)</p>
+</dd>
+</dl>
+<p># Interrupt function to turn LED ON when on-board button is pressed
+def button_interrupt(pin):</p>
+<blockquote>
+<div><p>pulse(led, 70)</p>
+</div></blockquote>
+<p>def main():</p>
+<blockquote>
+<div><p># Assign interrupt to the on-board push button
+onboard_button.irq(trigger=Pin.IRQ_FALLING, handler=button_interrupt)</p>
+</div></blockquote>
+<dl class="simple">
+<dt>if __name__ == ‘__main__’:</dt><dd><p>main()</p>
+</dd>
+</dl>
 </section>
 
 
