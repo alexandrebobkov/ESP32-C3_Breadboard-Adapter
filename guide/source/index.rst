@@ -20,3 +20,8 @@ documentation for details.
    examples
    bom
 
+Index
+=====
+
+* :ref:`genindex`
+
