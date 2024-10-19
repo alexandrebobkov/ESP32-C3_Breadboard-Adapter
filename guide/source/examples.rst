@@ -4,6 +4,9 @@ Examples
 MicroPython Blinky Example
 
 .. code-block:: python
+    :linesno:
+
+    code
 
 import machine
 from machine import Pin
