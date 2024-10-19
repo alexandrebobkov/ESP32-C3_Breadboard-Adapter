@@ -24,4 +24,5 @@ Index
 =====
 
 * :ref:`genindex`
+* :ref:`search`
 
