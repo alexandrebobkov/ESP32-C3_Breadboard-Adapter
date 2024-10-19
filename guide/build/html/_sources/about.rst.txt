@@ -15,11 +15,11 @@ Features:
  * on-board push switch and LED for your needs;
 
 ESP32-C3 Module:
-* single-core
-* 32-bit RISC-V MCU @ 160 MHz
-* 400 KB of internal RAM
-* RSA-3072-based secure boot and the AES-128/256-XTS flash encryption
-* low power-mode support
-* Rich connectivity for IoT applications: Wi-Fi and Bluetooth 5 (LE) with long-range support
-* Bluetooth LE SIG Mesh and Wi-FI Mesh support
-* 22 GPIOs
+ * single-core
+ * 32-bit RISC-V MCU @ 160 MHz
+ * 400 KB of internal RAM
+ * RSA-3072-based secure boot and the AES-128/256-XTS flash encryption
+ * low power-mode support
+ * Rich connectivity for IoT applications: Wi-Fi and Bluetooth 5 (LE) with long-range support
+ * Bluetooth LE SIG Mesh and Wi-FI Mesh support
+ * 22 GPIOs

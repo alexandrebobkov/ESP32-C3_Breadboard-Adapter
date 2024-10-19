@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.10.18)  19 OCT 2024 02:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.10.18)  19 OCT 2024 02:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -877,11 +877,11 @@ Chapter 2.
 ]
 Chapter 3.
 LaTeX Font Info:    Font shape `T1/txtt/b/n' in size <10> not available
-(Font)              Font shape `T1/txtt/bx/n' tried instead on input line 175.
+(Font)              Font shape `T1/txtt/bx/n' tried instead on input line 199.
 LaTeX Font Info:    Font shape `T1/txtt/m/it' in size <10> not available
-(Font)              Font shape `T1/txtt/m/sl' tried instead on input line 179.
+(Font)              Font shape `T1/txtt/m/sl' tried instead on input line 203.
 LaTeX Font Info:    Trying to load font information for TS1+txtt on input line 
-203.
+227.
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ts1txtt.fd
 File: ts1txtt.fd 2000/12/15 v3.1
 ) [7] [8
@@ -916,7 +916,7 @@ xlive/texmf-dist/fonts/type1/public/txfonts/t1xbtt.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/txfonts/t1xtt.pfb></usr/share/texlive/texmf-dist/font
 s/type1/public/txfonts/t1xtt.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
 lic/txfonts/tcxtt.pfb>
-Output written on esp32-c3breadboardadapter.pdf (15 pages, 130365 bytes).
+Output written on esp32-c3breadboardadapter.pdf (15 pages, 130400 bytes).
 PDF statistics:
  157 PDF objects out of 1000 (max. 8388607)
  123 compressed objects within 2 object streams
