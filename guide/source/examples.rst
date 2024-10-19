@@ -2,6 +2,7 @@ Examples
 =========
 
 MicroPython Blinky Example
+----------
 
 .. example-code::
 
