@@ -3,12 +3,14 @@ Examples
 
 MicroPython Blinky Example
 
-.. code-block:: python
-    :linesno:
+.. example-code::
 
-    import machine
-    from machine import Pin
-    import time, math
+    .. code-block:: python
+        :linesno:
+
+        import machine
+        from machine import Pin
+        import time, math
 
 ONBOARD_LED = 10	# GPIO10, PIN 7
 ONBOARD_BTN = 3		# GPIO3, 13
