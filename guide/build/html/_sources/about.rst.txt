@@ -1,6 +1,8 @@
 About
 =======
 
+.. math::`E=mc^2`
+
 Features:
  * compact size requires very little space on a breadboard;
  * connects to the power rails on a breadboard;
