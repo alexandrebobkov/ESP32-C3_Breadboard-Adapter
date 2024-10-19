@@ -11,8 +11,8 @@ MicroPython Blinky Example
     from machine import Pin
     import time, math
 
-    ONBOARD_LED = 10	# GPIO10, PIN 7
-    ONBOARD_BTN = 3		# GPIO3, 13
+    ONBOARD_LED = 10    # GPIO10, PIN 7
+    ONBOARD_BTN = 3     # GPIO3, 13
 
 # Configure on-board LED and push button
 # Stated GPIOs correspond to the wiring schematic
