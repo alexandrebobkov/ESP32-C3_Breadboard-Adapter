@@ -90,6 +90,167 @@ Add your content using \sphinxcode{\sphinxupquote{reStructuredText}} syntax. See
 \sphinxhref{https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html}{reStructuredText}
 documentation for details.
 
+\sphinxstepscope
+
+
+\chapter{About}
+\label{\detokenize{about:about}}\label{\detokenize{about::doc}}\begin{description}
+\sphinxlineitem{Features:}\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+compact size requires very little space on a breadboard;
+
+\item {} 
+\sphinxAtStartPar
+connects to the power rails on a breadboard;
+
+\item {} 
+\sphinxAtStartPar
+can be powered by USB\sphinxhyphen{}C port or external power supply;
+
+\item {} 
+\sphinxAtStartPar
+3.3V and 5V power supplies;
+
+\item {} 
+\sphinxAtStartPar
+GPIOs arranged into 4 groups for easier identification;
+
+\item {} 
+\sphinxAtStartPar
+on\sphinxhyphen{}board ESP32\sphinxhyphen{}C3 Module with USB\sphinxhyphen{}C port allows to flash a firmware as you work with breadboard;
+
+\item {} 
+\sphinxAtStartPar
+debugging points;
+
+\item {} 
+\sphinxAtStartPar
+power pads makes it easy to connect alligators supplying voltage to the board;
+
+\item {} 
+\sphinxAtStartPar
+on\sphinxhyphen{}board system LEDs: power, and module reset mode;
+
+\item {} 
+\sphinxAtStartPar
+on\sphinxhyphen{}board push switch for Reset and Flash modes;
+
+\item {} 
+\sphinxAtStartPar
+on\sphinxhyphen{}board push switch and LED for your needs;
+
+\end{itemize}
+
+\sphinxlineitem{ESP32\sphinxhyphen{}C3 Module:}\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+single\sphinxhyphen{}core
+
+\item {} 
+\sphinxAtStartPar
+32\sphinxhyphen{}bit RISC\sphinxhyphen{}V MCU @ 160 MHz
+
+\item {} 
+\sphinxAtStartPar
+400 KB of internal RAM
+
+\item {} 
+\sphinxAtStartPar
+RSA\sphinxhyphen{}3072\sphinxhyphen{}based secure boot and the AES\sphinxhyphen{}128/256\sphinxhyphen{}XTS flash encryption
+
+\item {} 
+\sphinxAtStartPar
+low power\sphinxhyphen{}mode support
+
+\item {} 
+\sphinxAtStartPar
+Rich connectivity for IoT applications: Wi\sphinxhyphen{}Fi and Bluetooth 5 (LE) with long\sphinxhyphen{}range support
+
+\item {} 
+\sphinxAtStartPar
+Bluetooth LE SIG Mesh and Wi\sphinxhyphen{}FI Mesh support
+
+\item {} 
+\sphinxAtStartPar
+22 GPIOs
+
+\end{itemize}
+
+\end{description}
+
+\sphinxstepscope
+
+
+\chapter{Schematic}
+\label{\detokenize{schematic:schematic}}\label{\detokenize{schematic::doc}}
+
+\section{GPIOs}
+\label{\detokenize{schematic:gpios}}
+\sphinxstepscope
+
+
+\chapter{Examples}
+\label{\detokenize{examples:examples}}\label{\detokenize{examples::doc}}
+
+\section{MicroPython Blinky Example}
+\label{\detokenize{examples:micropython-blinky-example}}
+\begin{sphinxVerbatim}[commandchars=\\\{\},numbers=left,firstnumber=1,stepnumber=1]
+\PYG{k+kn}{import} \PYG{n+nn}{machine}
+\PYG{k+kn}{from} \PYG{n+nn}{machine} \PYG{k+kn}{import} \PYG{n}{Pin}
+\PYG{k+kn}{import} \PYG{n+nn}{time}\PYG{o}{,} \PYG{n+nn}{math}
+
+\PYG{n}{ONBOARD\PYGZus{}LED} \PYG{o}{=} \PYG{l+m+mi}{10}    \PYG{c+c1}{\PYGZsh{} GPIO10, PIN 7}
+\PYG{n}{ONBOARD\PYGZus{}BTN} \PYG{o}{=} \PYG{l+m+mi}{3}     \PYG{c+c1}{\PYGZsh{} GPIO3, 13}
+
+\PYG{c+c1}{\PYGZsh{} Configure on\PYGZhy{}board LED and push button}
+\PYG{c+c1}{\PYGZsh{} Stated GPIOs correspond to the wiring schematic}
+\PYG{n}{onboard\PYGZus{}button} \PYG{o}{=} \PYG{n}{Pin}\PYG{p}{(}\PYG{n}{ONBOARD\PYGZus{}BTN}\PYG{p}{,} \PYG{n}{Pin}\PYG{o}{.}\PYG{n}{IN}\PYG{p}{,} \PYG{n}{Pin}\PYG{o}{.}\PYG{n}{PULL\PYGZus{}UP}\PYG{p}{)}
+
+\PYG{n}{led} \PYG{o}{=} \PYG{n}{machine}\PYG{o}{.}\PYG{n}{PWM}\PYG{p}{(}\PYG{n}{ONBOARD\PYGZus{}LED}\PYG{p}{,} \PYG{n}{freq}\PYG{o}{=}\PYG{l+m+mi}{1000}\PYG{p}{)}
+
+\PYG{k}{def} \PYG{n+nf}{pulse}\PYG{p}{(}\PYG{n}{l}\PYG{p}{,} \PYG{n}{t}\PYG{p}{)}\PYG{p}{:}
+    \PYG{k}{for} \PYG{n}{i} \PYG{o+ow}{in} \PYG{n+nb}{range}\PYG{p}{(}\PYG{l+m+mi}{20}\PYG{p}{)}\PYG{p}{:}
+        \PYG{n}{l}\PYG{o}{.}\PYG{n}{duty}\PYG{p}{(}\PYG{n+nb}{int}\PYG{p}{(}\PYG{n}{math}\PYG{o}{.}\PYG{n}{sin}\PYG{p}{(}\PYG{n}{i}\PYG{o}{/}\PYG{l+m+mi}{10} \PYG{o}{*} \PYG{n}{math}\PYG{o}{.}\PYG{n}{pi}\PYG{p}{)} \PYG{o}{*} \PYG{l+m+mi}{500} \PYG{o}{+} \PYG{l+m+mi}{500}\PYG{p}{)}\PYG{p}{)}
+        \PYG{n}{time}\PYG{o}{.}\PYG{n}{sleep\PYGZus{}ms}\PYG{p}{(}\PYG{n}{t}\PYG{p}{)}
+    \PYG{n}{l}\PYG{o}{.}\PYG{n}{duty}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} Interrupt function to turn LED ON when on\PYGZhy{}board button is pressed}
+\PYG{k}{def} \PYG{n+nf}{button\PYGZus{}interrupt}\PYG{p}{(}\PYG{n}{pin}\PYG{p}{)}\PYG{p}{:}
+    \PYG{n}{pulse}\PYG{p}{(}\PYG{n}{led}\PYG{p}{,} \PYG{l+m+mi}{70}\PYG{p}{)}
+
+\PYG{k}{def} \PYG{n+nf}{main}\PYG{p}{(}\PYG{p}{)}\PYG{p}{:}
+
+    \PYG{c+c1}{\PYGZsh{} Assign interrupt to the on\PYGZhy{}board push button}
+    \PYG{n}{onboard\PYGZus{}button}\PYG{o}{.}\PYG{n}{irq}\PYG{p}{(}\PYG{n}{trigger}\PYG{o}{=}\PYG{n}{Pin}\PYG{o}{.}\PYG{n}{IRQ\PYGZus{}FALLING}\PYG{p}{,} \PYG{n}{handler}\PYG{o}{=}\PYG{n}{button\PYGZus{}interrupt}\PYG{p}{)}
+
+\PYG{k}{if} \PYG{n+nv+vm}{\PYGZus{}\PYGZus{}name\PYGZus{}\PYGZus{}} \PYG{o}{==} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{\PYGZus{}\PYGZus{}main\PYGZus{}\PYGZus{}}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{:}
+    \PYG{n}{main}\PYG{p}{(}\PYG{p}{)}
+\end{sphinxVerbatim}
+
+\sphinxstepscope
+
+
+\chapter{Learning Activities}
+\label{\detokenize{activities:learning-activities}}\label{\detokenize{activities::doc}}
+\sphinxstepscope
+
+
+\chapter{Bill of Materials}
+\label{\detokenize{bom:bill-of-materials}}\label{\detokenize{bom::doc}}
+
+\chapter{Index}
+\label{\detokenize{index:index}}\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+\DUrole{xref}{\DUrole{std}{\DUrole{std-ref}{genindex}}}
+
+\item {} 
+\sphinxAtStartPar
+\DUrole{xref}{\DUrole{std}{\DUrole{std-ref}{search}}}
+
+\end{itemize}
+
 
 
 \renewcommand{\indexname}{Index}

@@ -21,8 +21,6 @@ documentation for details.
    activities
    bom
 
-   modules
-
 Index
 =====
 
