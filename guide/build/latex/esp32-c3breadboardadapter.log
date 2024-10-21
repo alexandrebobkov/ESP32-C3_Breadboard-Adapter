@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.10.11)  21 OCT 2024 00:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.10.11)  21 OCT 2024 00:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -177,16 +177,10 @@ Package: tgheros 2009/09/27 v1.2 TeX Gyre Heros as default sans serif family
 Type X to quit or <RETURN> to proceed,
 or enter new name. (Default extension: sty)
 
-Enter file name: ^^[[A
-! Interruption.
-<to be read again> 
-                   }
-l.46 \usepackage
-                {sphinx}^^M
-? 
+Enter file name: 
 ! Emergency stop.
-<to be read again> 
-                   }
+<read *> 
+         
 l.46 \usepackage
                 {sphinx}^^M
 End of file on the terminal!
