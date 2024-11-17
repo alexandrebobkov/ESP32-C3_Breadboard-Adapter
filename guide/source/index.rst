@@ -25,7 +25,7 @@ Index
 =====
 
 .. glossary::
-   ESP32-C3
+   :term:`ESP32-C3`
       Espressif microcontroller ESP32-C3
 
 .. index::
