@@ -24,6 +24,10 @@ documentation for details.
 Index
 =====
 
+.. glossary::
+   ESP32-C3
+      Espressif microcontroller ESP32-C3
+
 .. index::
    single: ESP32; microcontroller
    single: execution; context
