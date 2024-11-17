@@ -14,15 +14,18 @@ GPIOs
    * - Pin
      - GPIO
      - Description
+   * - 7
+     - GPIO10
+     - Onboard LED  
    * - 13
      - GPIO18
      - USB_D-
    * - 14
      - GPIO19
      - USB_D+
-   * - 10
-     - GPIO10
-     - User-defined LED
+   * - 13
+     - GPIO3
+     - Onboard button
    * - TXD
      - TXD
      - UART Transmit data
