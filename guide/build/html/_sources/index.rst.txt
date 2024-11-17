@@ -25,6 +25,7 @@ Index
 =====
 
 .. index::
+   single: ESP32; microcontroller
    single: execution; context
 
 * :ref:`genindex`
