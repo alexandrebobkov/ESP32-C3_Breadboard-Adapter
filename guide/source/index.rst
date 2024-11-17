@@ -24,6 +24,8 @@ documentation for details.
 Index
 =====
 
+.. index::
+
 * :ref:`genindex`
 * :ref:`search`
 
