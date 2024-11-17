@@ -25,6 +25,7 @@ Index
 =====
 
 .. index::
+   single: execution; context
 
 * :ref:`genindex`
 * :ref:`search`
