@@ -1,0 +1,14 @@
+\begin{sphinxtheindex}
+\let\bigletter\sphinxstyleindexlettergroup
+\let\spxpagem \sphinxstyleindexpagemain
+\let\spxentry \sphinxstyleindexentry
+\let\spxextra \sphinxstyleindexextra
+
+  \bigletter E
+  \item \spxentry{ESP32}
+    \subitem \spxentry{microcontroller}, \hyperpage{15}
+  \item \spxentry{ESP32\sphinxhyphen {}C3}, \hyperindexformat{\spxpagem}{15}
+  \item \spxentry{execution}
+    \subitem \spxentry{context}, \hyperpage{15}
+
+\end{sphinxtheindex}

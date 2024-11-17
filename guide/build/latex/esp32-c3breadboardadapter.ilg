@@ -1,5 +1,7 @@
-This is makeindex, version 2.17 [TeX Live 2024] (kpathsea + Thai support).
+This is makeindex, version 2.17 [TeX Live 2025/dev] (kpathsea + Thai support).
 Scanning style file ./python.ist.......done (7 attributes redefined, 0 ignored).
-Scanning input file esp32-c3breadboardadapter.idx...done (0 entries accepted, 0 rejected).
-Nothing written in esp32-c3breadboardadapter.ind.
+Scanning input file esp32-c3breadboardadapter.idx....done (3 entries accepted, 0 rejected).
+Sorting entries....done (4 comparisons).
+Generating output file esp32-c3breadboardadapter.ind....done (14 lines written, 0 warnings).
+Output written in esp32-c3breadboardadapter.ind.
 Transcript written in esp32-c3breadboardadapter.ilg.

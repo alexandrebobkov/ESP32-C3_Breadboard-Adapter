@@ -7,3 +7,4 @@
 \contentsline {chapter}{\numberline {4}Learning Activities}{11}{chapter.4}%
 \contentsline {chapter}{\numberline {5}Bill of Materials}{13}{chapter.5}%
 \contentsline {chapter}{\numberline {6}Index}{15}{chapter.6}%
+\contentsline {chapter}{Index}{17}{section*.4}%
