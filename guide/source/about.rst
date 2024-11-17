@@ -27,3 +27,6 @@ ESP32-C3 Module:
  * Rich connectivity for IoT applications: Wi-Fi and Bluetooth 5 (LE) with long-range support
  * Bluetooth LE SIG Mesh and Wi-FI Mesh support
  * 22 GPIOs
+
+ .. seealso:: MicroPython Demo Code
+    MicroPython demo code is available
