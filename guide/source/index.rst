@@ -27,3 +27,4 @@ Index
 * :ref:`genindex`
 * :ref:`search`
 
+.. https://lpn-doc-sphinx-primer.readthedocs.io/en/stable/concepts/admonition.html
