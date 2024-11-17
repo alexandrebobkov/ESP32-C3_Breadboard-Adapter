@@ -64,7 +64,7 @@
 
 
 \title{ESP32\sphinxhyphen{}C3 Breadboard Adapter}
-\date{Oct 21, 2024}
+\date{Nov 17, 2024}
 \release{5.8}
 \author{Alexander Bobkov}
 \newcommand{\sphinxlogo}{\vbox{}}
@@ -94,7 +94,9 @@ documentation for details.
 
 
 \chapter{About}
-\label{\detokenize{about:about}}\label{\detokenize{about::doc}}\begin{description}
+\label{\detokenize{about:about}}\label{\detokenize{about::doc}}
+\noindent\sphinxincludegraphics{{board}.png}
+\begin{description}
 \sphinxlineitem{Features:}\begin{itemize}
 \item {} 
 \sphinxAtStartPar
@@ -184,9 +186,87 @@ Bluetooth LE SIG Mesh and Wi\sphinxhyphen{}FI Mesh support
 
 \chapter{Schematic}
 \label{\detokenize{schematic:schematic}}\label{\detokenize{schematic::doc}}
+\noindent\sphinxincludegraphics{{schematic}.png}
+
 
 \section{GPIOs}
 \label{\detokenize{schematic:gpios}}
+
+\begin{savenotes}\sphinxattablestart
+\sphinxthistablewithglobalstyle
+\centering
+\sphinxcapstartof{table}
+\sphinxthecaptionisattop
+\sphinxcaption{GPIOs}\label{\detokenize{schematic:id1}}
+\sphinxaftertopcaption
+\begin{tabular}[t]{\X{15}{55}\X{10}{55}\X{30}{55}}
+\sphinxtoprule
+\sphinxstyletheadfamily 
+\sphinxAtStartPar
+Pin
+&\sphinxstyletheadfamily 
+\sphinxAtStartPar
+GPIO
+&\sphinxstyletheadfamily 
+\sphinxAtStartPar
+Description
+\\
+\sphinxmidrule
+\sphinxtableatstartofbodyhook
+\sphinxAtStartPar
+13
+&
+\sphinxAtStartPar
+GPIO18
+&
+\sphinxAtStartPar
+USB\_D\sphinxhyphen{}
+\\
+\sphinxhline
+\sphinxAtStartPar
+14
+&
+\sphinxAtStartPar
+GPIO19
+&
+\sphinxAtStartPar
+USB\_D+
+\\
+\sphinxhline
+\sphinxAtStartPar
+10
+&
+\sphinxAtStartPar
+GPIO10
+&
+\sphinxAtStartPar
+User\sphinxhyphen{}defined LED
+\\
+\sphinxhline
+\sphinxAtStartPar
+TXD
+&
+\sphinxAtStartPar
+TXD
+&
+\sphinxAtStartPar
+UART Transmit data
+\\
+\sphinxhline
+\sphinxAtStartPar
+RXD
+&
+\sphinxAtStartPar
+RXD
+&
+\sphinxAtStartPar
+UART Receive data
+\\
+\sphinxbottomrule
+\end{tabular}
+\sphinxtableafterendhook\par
+\sphinxattableend\end{savenotes}
+
 \sphinxstepscope
 
 
@@ -238,16 +318,68 @@ Bluetooth LE SIG Mesh and Wi\sphinxhyphen{}FI Mesh support
 
 \chapter{Bill of Materials}
 \label{\detokenize{bom:bill-of-materials}}\label{\detokenize{bom::doc}}
+\sphinxAtStartPar
+The table below lists components required for this project.
+
+
+\begin{savenotes}\sphinxattablestart
+\sphinxthistablewithglobalstyle
+\centering
+\sphinxcapstartof{table}
+\sphinxthecaptionisattop
+\sphinxcaption{Bill of Materials}\label{\detokenize{bom:id1}}
+\sphinxaftertopcaption
+\begin{tabular}[t]{\X{30}{120}\X{25}{120}\X{15}{120}\X{50}{120}}
+\sphinxtoprule
+\sphinxstyletheadfamily 
+\sphinxAtStartPar
+Item
+&\sphinxstyletheadfamily 
+\sphinxAtStartPar
+Part \#
+&\sphinxstyletheadfamily 
+\sphinxAtStartPar
+Qty
+&\sphinxstyletheadfamily 
+\sphinxAtStartPar
+Description
+\\
+\sphinxmidrule
+\sphinxtableatstartofbodyhook
+\sphinxAtStartPar
+Row 1, Column 1
+&&&
+\sphinxAtStartPar
+Row 1, Column 2
+\\
+\sphinxhline
+\sphinxAtStartPar
+Row 2, Column 1
+&
+\sphinxAtStartPar
+Row 2, Column 2
+&
+\sphinxAtStartPar
+Row 2, Column 3
+&
+\sphinxAtStartPar
+Row 2, Column 4
+\\
+\sphinxbottomrule
+\end{tabular}
+\sphinxtableafterendhook\par
+\sphinxattableend\end{savenotes}
+
 
 \chapter{Index}
 \label{\detokenize{index:index}}\begin{itemize}
 \item {} 
 \sphinxAtStartPar
-\DUrole{xref}{\DUrole{std}{\DUrole{std-ref}{genindex}}}
+\DUrole{xref,std,std-ref}{genindex}
 
 \item {} 
 \sphinxAtStartPar
-\DUrole{xref}{\DUrole{std}{\DUrole{std-ref}{search}}}
+\DUrole{xref,std,std-ref}{search}
 
 \end{itemize}
 

@@ -33,7 +33,7 @@ end
 # Unset irrelevant variables.
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/home/alex/Development/ESP32-C3_Breadboard-Adapter/guide/venv"
+set -gx VIRTUAL_ENV "/home/alex/github/ESP32-C3_Breadboard-Adapter/guide/venv"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH

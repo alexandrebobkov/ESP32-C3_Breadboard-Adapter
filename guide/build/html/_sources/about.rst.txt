@@ -1,7 +1,8 @@
 About
 =======
 
-.. math::`E=mc^2`
+.. image:: ../assets/board.png
+    :alt: ESP32-C3 Breadboard USB-C Power Adapter
 
 Features:
  * compact size requires very little space on a breadboard;
