@@ -30,5 +30,5 @@ html_theme = 'alabaster'
 html_static_path = ['_static']
 
 latex_elements = {
-   'pointsize':'10pt'
+   'pointsize':'8pt'
 }

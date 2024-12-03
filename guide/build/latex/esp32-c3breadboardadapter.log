@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.10.18)  3 DEC 2024 10:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.10.18)  3 DEC 2024 10:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -668,6 +668,10 @@ File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count317
 \l__pdf_internal_box=\box119
 )
+
+LaTeX Warning: Unused global option(s):
+    [8pt].
+
 (./esp32-c3breadboardadapter.aux)
 \openout1 = `esp32-c3breadboardadapter.aux'.
 
@@ -861,10 +865,10 @@ ed.
 (rerunfilecheck)             Checksum: 4CDE1C762E61967D5BCE452223485267;1202.
  ) 
 Here is how much of TeX's memory you used:
- 14953 strings out of 476106
- 235414 string characters out of 5793932
+ 14954 strings out of 476106
+ 235418 string characters out of 5793932
  1962975 words of memory out of 5000000
- 36567 multiletter control sequences out of 15000+600000
+ 36568 multiletter control sequences out of 15000+600000
  609489 words of font info for 78 fonts, out of 8000000 for 9000
  60 hyphenation exceptions out of 8191
  72i,11n,79p,351b,594s stack positions out of 10000i,1000n,20000p,200000b,200000s
