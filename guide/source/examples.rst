@@ -4,6 +4,8 @@ Examples
 MicroPython Blinky Example
 ----------
 
+The following code written in MicroPython runs a timer to periodically blink the on-board LED.
+
 .. code-block:: python
     :linenos:
 
