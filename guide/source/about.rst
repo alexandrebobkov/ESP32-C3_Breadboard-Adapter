@@ -2,7 +2,9 @@ About
 =======
 
 .. image:: ../assets/board.png
-    :alt: ESP32-C3 Breadboard USB-C Power Adapter
+    :alt: ESP32-C3 Breadboard with USB-C Power Adapter
+
+Has smaller footprint and uses less area on the breadboard. GPIOs pins are convenient to use.
 
 Features:
  * compact size requires very little space on a breadboard;

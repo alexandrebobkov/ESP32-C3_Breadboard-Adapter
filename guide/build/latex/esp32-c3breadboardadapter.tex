@@ -10,9 +10,6 @@
 %% let collapsible pdf bookmarks panel have high depth per default
 \PassOptionsToPackage{bookmarksdepth=5}{hyperref}
 
-\PassOptionsToPackage{booktabs}{sphinx}
-\PassOptionsToPackage{colorrows}{sphinx}
-
 \PassOptionsToPackage{warn}{textcomp}
 \usepackage[utf8]{inputenc}
 \ifdefined\DeclareUnicodeCharacter
@@ -64,18 +61,13 @@
 
 
 \title{ESP32\sphinxhyphen{}C3 Breadboard Adapter}
-\date{Nov 17, 2024}
+\date{Dec 03, 2024}
 \release{5.8}
 \author{Alexander Bobkov}
 \newcommand{\sphinxlogo}{\vbox{}}
 \renewcommand{\releasename}{Release}
 \makeindex
 \begin{document}
-
-\ifdefined\shorthandoff
-  \ifnum\catcode`\=\string=\active\shorthandoff{=}\fi
-  \ifnum\catcode`\"=\active\shorthandoff{"}\fi
-\fi
 
 \pagestyle{empty}
 \sphinxmaketitle
@@ -90,14 +82,15 @@ Add your content using \sphinxcode{\sphinxupquote{reStructuredText}} syntax. See
 \sphinxhref{https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html}{reStructuredText}
 documentation for details.
 
-\sphinxstepscope
-
 
 \chapter{About}
 \label{\detokenize{about:about}}\label{\detokenize{about::doc}}
 \noindent\sphinxincludegraphics{{board}.png}
+
+\sphinxAtStartPar
+Has smaller footprint and uses less area on the breadboard. GPIOs pins are convenient to use.
 \begin{description}
-\sphinxlineitem{Features:}\begin{itemize}
+\item[{Features:}] \leavevmode\begin{itemize}
 \item {} 
 \sphinxAtStartPar
 compact size requires very little space on a breadboard;
@@ -144,7 +137,7 @@ on\sphinxhyphen{}board push switch and LED for your needs;
 
 \end{itemize}
 
-\sphinxlineitem{ESP32\sphinxhyphen{}C3 Module:}\begin{itemize}
+\item[{ESP32\sphinxhyphen{}C3 Module:}] \leavevmode\begin{itemize}
 \item {} 
 \sphinxAtStartPar
 single\sphinxhyphen{}core
@@ -180,19 +173,17 @@ Bluetooth LE SIG Mesh and Wi\sphinxhyphen{}FI Mesh support
 \end{itemize}
 
 
-\begin{sphinxseealso}{See also:}
+\sphinxstrong{See also:}
+\nopagebreak
+
 
 \sphinxAtStartPar
 MicroPython Demo Code
 MicroPython demo code is available
 
 
-\end{sphinxseealso}
-
 
 \end{description}
-
-\sphinxstepscope
 
 
 \chapter{Schematic}
@@ -204,14 +195,13 @@ MicroPython demo code is available
 \label{\detokenize{schematic:gpios}}
 
 \begin{savenotes}\sphinxattablestart
-\sphinxthistablewithglobalstyle
 \centering
 \sphinxcapstartof{table}
 \sphinxthecaptionisattop
 \sphinxcaption{GPIOs}\label{\detokenize{schematic:id1}}
 \sphinxaftertopcaption
-\begin{tabular}[t]{\X{15}{55}\X{10}{55}\X{30}{55}}
-\sphinxtoprule
+\begin{tabular}[t]{|\X{15}{55}|\X{10}{55}|\X{30}{55}|}
+\hline
 \sphinxstyletheadfamily 
 \sphinxAtStartPar
 Pin
@@ -222,8 +212,7 @@ GPIO
 \sphinxAtStartPar
 Description
 \\
-\sphinxmidrule
-\sphinxtableatstartofbodyhook
+\hline
 \sphinxAtStartPar
 7
 &
@@ -233,7 +222,7 @@ GPIO10
 \sphinxAtStartPar
 Onboard LED
 \\
-\sphinxhline
+\hline
 \sphinxAtStartPar
 13
 &
@@ -243,7 +232,7 @@ GPIO18
 \sphinxAtStartPar
 USB\_D\sphinxhyphen{}
 \\
-\sphinxhline
+\hline
 \sphinxAtStartPar
 14
 &
@@ -253,7 +242,7 @@ GPIO19
 \sphinxAtStartPar
 USB\_D+
 \\
-\sphinxhline
+\hline
 \sphinxAtStartPar
 13
 &
@@ -263,7 +252,7 @@ GPIO3
 \sphinxAtStartPar
 Onboard button
 \\
-\sphinxhline
+\hline
 \sphinxAtStartPar
 TXD
 &
@@ -273,7 +262,7 @@ TXD
 \sphinxAtStartPar
 UART Transmit data
 \\
-\sphinxhline
+\hline
 \sphinxAtStartPar
 RXD
 &
@@ -283,12 +272,10 @@ RXD
 \sphinxAtStartPar
 UART Receive data
 \\
-\sphinxbottomrule
+\hline
 \end{tabular}
-\sphinxtableafterendhook\par
+\par
 \sphinxattableend\end{savenotes}
-
-\sphinxstepscope
 
 
 \chapter{Examples}
@@ -329,13 +316,9 @@ UART Receive data
     \PYG{n}{main}\PYG{p}{(}\PYG{p}{)}
 \end{sphinxVerbatim}
 
-\sphinxstepscope
-
 
 \chapter{Learning Activities}
 \label{\detokenize{activities:learning-activities}}\label{\detokenize{activities::doc}}
-\sphinxstepscope
-
 
 \chapter{Bill of Materials}
 \label{\detokenize{bom:bill-of-materials}}\label{\detokenize{bom::doc}}
@@ -344,14 +327,13 @@ The table below lists components required for this project.
 
 
 \begin{savenotes}\sphinxattablestart
-\sphinxthistablewithglobalstyle
 \centering
 \sphinxcapstartof{table}
 \sphinxthecaptionisattop
 \sphinxcaption{Bill of Materials}\label{\detokenize{bom:id1}}
 \sphinxaftertopcaption
-\begin{tabular}[t]{\X{30}{120}\X{25}{120}\X{15}{120}\X{50}{120}}
-\sphinxtoprule
+\begin{tabular}[t]{|\X{30}{120}|\X{25}{120}|\X{15}{120}|\X{50}{120}|}
+\hline
 \sphinxstyletheadfamily 
 \sphinxAtStartPar
 Item
@@ -365,15 +347,14 @@ Qty
 \sphinxAtStartPar
 Description
 \\
-\sphinxmidrule
-\sphinxtableatstartofbodyhook
+\hline
 \sphinxAtStartPar
 Row 1, Column 1
 &&&
 \sphinxAtStartPar
 Row 1, Column 2
 \\
-\sphinxhline
+\hline
 \sphinxAtStartPar
 Row 2, Column 1
 &
@@ -386,15 +367,15 @@ Row 2, Column 3
 \sphinxAtStartPar
 Row 2, Column 4
 \\
-\sphinxbottomrule
+\hline
 \end{tabular}
-\sphinxtableafterendhook\par
+\par
 \sphinxattableend\end{savenotes}
 
 
 \chapter{Index}
 \label{\detokenize{index:index}}\begin{description}
-\sphinxlineitem{{\hyperref[\detokenize{index:term-ESP32-C3}]{\sphinxtermref{\DUrole{xref,std,std-term}{ESP32\sphinxhyphen{}C3}}}}\index{ESP32\sphinxhyphen{}C3@\spxentry{ESP32\sphinxhyphen{}C3}|spxpagem}\phantomsection\label{\detokenize{index:term-ESP32-C3}}}
+\item[{{\hyperref[\detokenize{index:term-ESP32-C3}]{\sphinxtermref{\DUrole{xref,std,std-term}{ESP32\sphinxhyphen{}C3}}}}\index{ESP32\sphinxhyphen{}C3@\spxentry{ESP32\sphinxhyphen{}C3}|spxpagem}\phantomsection\label{\detokenize{index:term-ESP32-C3}}}] \leavevmode
 \sphinxAtStartPar
 Espressif microcontroller ESP32\sphinxhyphen{}C3
 
