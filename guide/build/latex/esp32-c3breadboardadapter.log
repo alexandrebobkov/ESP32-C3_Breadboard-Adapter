@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.10.18)  3 DEC 2024 10:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.10.18)  3 DEC 2024 10:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -821,11 +821,11 @@ Overfull \vbox (99.79604pt too high) has occurred while \output is active []
 ]
 Chapter 3.
 LaTeX Font Info:    Font shape `T1/txtt/b/n' in size <10> not available
-(Font)              Font shape `T1/txtt/bx/n' tried instead on input line 287.
+(Font)              Font shape `T1/txtt/bx/n' tried instead on input line 290.
 LaTeX Font Info:    Font shape `T1/txtt/m/it' in size <10> not available
-(Font)              Font shape `T1/txtt/m/sl' tried instead on input line 291.
+(Font)              Font shape `T1/txtt/m/sl' tried instead on input line 294.
 LaTeX Font Info:    Trying to load font information for TS1+txtt on input line 
-315.
+318.
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ts1txtt.fd
 File: ts1txtt.fd 2000/12/15 v3.1
 ) [9] [10
@@ -837,7 +837,7 @@ Chapter 4.
 ]
 Chapter 5.
 
-Underfull \hbox (badness 10000) in paragraph at lines 367--369
+Underfull \hbox (badness 10000) in paragraph at lines 370--372
 []|\T1/qtm/m/n/10 Row 2,
  []
 
@@ -863,7 +863,7 @@ ed.
 Here is how much of TeX's memory you used:
  14953 strings out of 476106
  235414 string characters out of 5793932
- 1959975 words of memory out of 5000000
+ 1960975 words of memory out of 5000000
  36567 multiletter control sequences out of 15000+600000
  609489 words of font info for 78 fonts, out of 8000000 for 9000
  60 hyphenation exceptions out of 8191
@@ -877,7 +877,7 @@ tex-gyre/qtmr.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qtmri.pfb></usr
 live/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb></usr/share/texlive/texmf-
 dist/fonts/type1/public/txfonts/t1xtt.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/public/txfonts/tcxtt.pfb>
-Output written on esp32-c3breadboardadapter.pdf (21 pages, 837507 bytes).
+Output written on esp32-c3breadboardadapter.pdf (21 pages, 837634 bytes).
 PDF statistics:
  223 PDF objects out of 1000 (max. 8388607)
  177 compressed objects within 2 object streams
