@@ -5,6 +5,7 @@
 \contentsline {chapter}{\numberline {3}Examples}{9}{chapter.3}%
 \contentsline {section}{\numberline {3.1}MicroPython Blinky Example}{9}{section.3.1}%
 \contentsline {chapter}{\numberline {4}Learning Activities}{11}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Measure Temperature, Pressure, and Humidity}{11}{section.4.1}%
 \contentsline {chapter}{\numberline {5}Bill of Materials}{13}{chapter.5}%
 \contentsline {chapter}{\numberline {6}Index}{15}{chapter.6}%
 \contentsline {chapter}{Index}{17}{section*.4}%
