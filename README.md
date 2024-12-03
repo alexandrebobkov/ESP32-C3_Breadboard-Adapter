@@ -4,6 +4,8 @@ _ESP32-C3 Module, power supply, and breadboard adapter combo._
 
 <img alt="ESP32-Node PCB" src="https://github.com/alexandrebobkov/ESP32-C3_Breadboard-Adapter/blob/main/assets/ESP32-C3-BreadBoardAdapter.jpg" width="75%"/>
 
+[Manual](https://github.com/alexandrebobkov/ESP32-C3_Breadboard-Adapter/blob/main/guide/build/latex/esp32-c3breadboardadapter.pdf)
+
 ### Features:
 - compact size requires very little space on a breadboard;
 - connects to the power rails on a breadboard;
@@ -29,8 +31,6 @@ _ESP32-C3 Module, power supply, and breadboard adapter combo._
 
 ## Learning Activities
 _Learn and develop new skills as you build and work with this microcontroller combo board._
-
-[Manual](https://github.com/alexandrebobkov/ESP32-C3_Breadboard-Adapter/blob/main/guide/build/latex/esp32-c3breadboardadapter.pdf)
 
 ## Schematic
 
