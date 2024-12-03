@@ -292,14 +292,14 @@ The following code written in MicroPython runs a timer to periodically blink the
 \PYG{k+kn}{import} \PYG{n+nn}{time}\PYG{o}{,} \PYG{n+nn}{math}
 
 \PYG{n}{ONBOARD\PYGZus{}LED} \PYG{o}{=} \PYG{l+m+mi}{10}    \PYG{c+c1}{\PYGZsh{} GPIO10, PIN 7}
-\PYG{n}{ONBOARD\PYGZus{}BTN} \PYG{o}{=} \PYG{l+m+mi}{3}     \PYG{c+c1}{\PYGZsh{} GPIO3, 13}
+\PYG{n}{ONBOARD\PYGZus{}BTN} \PYG{o}{=} \PYG{l+m+mi}{3}     \PYG{c+c1}{\PYGZsh{} GPIO3, PIN 13}
 
 \PYG{c+c1}{\PYGZsh{} Configure on\PYGZhy{}board LED and push button}
 \PYG{c+c1}{\PYGZsh{} Stated GPIOs correspond to the wiring schematic}
 \PYG{n}{onboard\PYGZus{}button} \PYG{o}{=} \PYG{n}{Pin}\PYG{p}{(}\PYG{n}{ONBOARD\PYGZus{}BTN}\PYG{p}{,} \PYG{n}{Pin}\PYG{o}{.}\PYG{n}{IN}\PYG{p}{,} \PYG{n}{Pin}\PYG{o}{.}\PYG{n}{PULL\PYGZus{}UP}\PYG{p}{)}
 
+\PYG{c+c1}{\PYGZsh{} Assign on\PYGZhy{}board LED to the PWM and cycle its brightness.}
 \PYG{n}{led} \PYG{o}{=} \PYG{n}{machine}\PYG{o}{.}\PYG{n}{PWM}\PYG{p}{(}\PYG{n}{ONBOARD\PYGZus{}LED}\PYG{p}{,} \PYG{n}{freq}\PYG{o}{=}\PYG{l+m+mi}{1000}\PYG{p}{)}
-
 \PYG{k}{def} \PYG{n+nf}{pulse}\PYG{p}{(}\PYG{n}{l}\PYG{p}{,} \PYG{n}{t}\PYG{p}{)}\PYG{p}{:}
     \PYG{k}{for} \PYG{n}{i} \PYG{o+ow}{in} \PYG{n+nb}{range}\PYG{p}{(}\PYG{l+m+mi}{20}\PYG{p}{)}\PYG{p}{:}
         \PYG{n}{l}\PYG{o}{.}\PYG{n}{duty}\PYG{p}{(}\PYG{n+nb}{int}\PYG{p}{(}\PYG{n}{math}\PYG{o}{.}\PYG{n}{sin}\PYG{p}{(}\PYG{n}{i}\PYG{o}{/}\PYG{l+m+mi}{10} \PYG{o}{*} \PYG{n}{math}\PYG{o}{.}\PYG{n}{pi}\PYG{p}{)} \PYG{o}{*} \PYG{l+m+mi}{500} \PYG{o}{+} \PYG{l+m+mi}{500}\PYG{p}{)}\PYG{p}{)}
