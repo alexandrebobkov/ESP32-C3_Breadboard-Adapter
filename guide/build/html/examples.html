@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 
 <html>
@@ -38,7 +39,8 @@
 <h1>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h1>
 <section id="micropython-blinky-example">
 <h2>MicroPython Blinky Example<a class="headerlink" href="#micropython-blinky-example" title="Permalink to this headline">¶</a></h2>
-<p>The following code written in MicroPython runs a timer to periodically blink the on-board LED wired to the GPIO10 (Pin 7).</p>
+<p>The following code written in MicroPython runs a timer to periodically blink the on-board LED wired to the GPIO10 (Pin 7).
+Button wired to the GPIO3 (Pin 13) interrupts the pulse cycle.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="kn">import</span> <span class="nn">machine</span>
 <span class="linenos"> 2</span><span class="kn">from</span> <span class="nn">machine</span> <span class="kn">import</span> <span class="n">Pin</span>
 <span class="linenos"> 3</span><span class="kn">import</span> <span class="nn">time</span><span class="o">,</span> <span class="nn">math</span>
