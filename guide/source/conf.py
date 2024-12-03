@@ -28,3 +28,7 @@ html_theme = 'alabaster'
 #'sphinx_rtd_theme'
 #'alabaster'
 html_static_path = ['_static']
+
+latex_elements = {
+   'pointsize':'10pt'
+}
