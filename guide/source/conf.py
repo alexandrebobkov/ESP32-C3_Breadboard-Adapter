@@ -14,7 +14,7 @@ release = '5.8'
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = []
+extensions = ['sphinx_simplepdf',]
 
 templates_path = ['_templates']
 exclude_patterns = []
@@ -30,5 +30,11 @@ html_theme = 'alabaster'
 html_static_path = ['_static']
 
 latex_elements = {
-   'pointsize':'8pt'
+    'papersize':'letterpaper',
+    'pointsize':'8pt'
+}
+
+simplepdf_vars = {
+    'primary': '#333333',
+    'links': '#FF3333',
 }
