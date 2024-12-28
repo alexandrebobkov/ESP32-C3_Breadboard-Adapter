@@ -57,21 +57,21 @@ _The table below reconciles ESP32 module GPIOs with board pins_
 | GPIO | Physical Pin | Type | Description |
 | --- | --- | --- | --- |
 | EN | 1 | I | Enable/Disable the chip (active HIGH). |
-| IO4 | 2 | I/O/T | __ADC1_CH4__, FSPIHD, MTMS  |
-| IO5 | 3 | I/O/T | __ADC2_CH0__, FSPIWP, MTDI |
-| IO6 | 4 | I/O/T | FSPICLK, MTCK |
-| IO8 | 5 | I/O/T |  |
-| IO7 | 6 | I/O/T | FSPDI, MTDO |
-| IO10 | 7 | I/O/T | FSPICS0 |
-| IO9 | 8 | I/O/T | |
-| USB_D+ | 9 | I/O/T | __GOIO19__, USB D+ |
-| RxD | 10 |  I/O/T | __GPIO20__, U0RxD |
-| USB_D- | 11 |  I/O/T | __GPIO18__, USB D- |
-| TxD | 12 |  I/O/T | __GPIO21__, U0TxD |
-| IO3 | 13 | I/O/T | __ADC1_CH3__ |
-| IO2 | 14 |  I/O/T | __ADC1_CH2__, FSPIQ |
-| IO1 | 15 |  I/O/T | __ADC1_CH1__, XTAL_32K_N |
-| IO0 | 16 |  I/O/T | __ADC1_CH0__, XTAL_32K_P |
+| IO4 | 2 | I/O/T | GPIO4, __ADC1_CH4__, FSPIHD, MTMS  |
+| IO5 | 3 | I/O/T | GPIO5, __ADC2_CH0__, FSPIWP, MTDI |
+| IO6 | 4 | I/O/T | GPIO6, FSPICLK, MTCK |
+| IO8 | 5 | I/O/T | GPIO8 |
+| IO7 | 6 | I/O/T | GPIO7, FSPDI, MTDO |
+| IO10 | 7 | I/O/T | GPIO10, FSPICS0 |
+| IO9 | 8 | I/O/T | GPIO9 |
+| USB_D+ | 9 | I/O/T | GOIO19, __USB D+__ |
+| RxD | 10 |  I/O/T | GPIO20, __U0RxD__ |
+| USB_D- | 11 |  I/O/T | GPIO18, __USB D-__ |
+| TxD | 12 |  I/O/T | GPIO21, __U0TxD__ |
+| IO3 | 13 | I/O/T | GPIO3, __ADC1_CH3__ |
+| IO2 | 14 |  I/O/T | GPIO2, __ADC1_CH2__, FSPIQ |
+| IO1 | 15 |  I/O/T | GPIO1, __ADC1_CH1__, XTAL_32K_N |
+| IO0 | 16 |  I/O/T | GPIO0, __ADC1_CH0__, XTAL_32K_P |
 
 ## Components List (Bill of Materials)
 
