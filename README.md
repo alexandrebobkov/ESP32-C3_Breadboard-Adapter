@@ -50,6 +50,14 @@ _The table below lists strapping and reserved pins_
 | IO10 | 7 | 10 | On-board LED |
 | IO3 | 13 | 15 | On-board push switch |
 
+### GPIOs & Pins
+
+_The table below reconciles ESP32 module GPIOs with board pins_
+
+| GPIO | Physical Pin | Description |
+| --- | --- | --- |
+
+
 ## Components List (Bill of Materials)
 
 | Reference | Value | Description | Reference |
