@@ -80,7 +80,7 @@ _The table below reconciles wiring of ESP32 module GPIOs with board pins._
 ### ESP32-C3 Current Consumption Characteristics
 
 |  Mode  |  Peak (mA)  |
-|  ---  |  :---:  |
+|  ---  |  ---:  |
 | RF working |  345mA  |
 | Modem sleep[ the CPU is powered on @ 160 MHz |  20mA  |
 | Light sleep |  130 uA  |
