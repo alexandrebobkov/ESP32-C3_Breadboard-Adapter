@@ -38,7 +38,11 @@ _Learn and develop new skills as you build and work with this microcontroller co
 
 ### Reserved GPIOs & Pins
 
-_The table below lists strapping and reserved pins_
+_The table below lists strapping and reserved pins._
+
+ESP32-C3 has three strapping pins: GPIO2, GPIO8 and GPIO9. By default, GPIO9 is connected to the internal pull-up resistor. If GPIO9 is not connected or connected to an external high-impedance circuit, the latched bit value will be '1'.
+
+During the chip's system reset, the latches of strapping pins samle re voltage level as strapping bits of '0' or '1', and hold these bits until the chip is powered down. After reset, the strapping pins work as normal-function pins.
 
 | GPIO | Physical Pin | Adapter Pin | Description |
 | --- | --- | --- | --- |
@@ -52,7 +56,7 @@ _The table below lists strapping and reserved pins_
 
 ### GPIOs & Pins
 
-_The table below reconciles ESP32 module GPIOs with board pins_
+_The table below reconciles wiring of ESP32 module GPIOs with board pins._
 
 | GPIO | Physical Pin | Type | Description |
 | --- | --- | --- | --- |
@@ -72,6 +76,16 @@ _The table below reconciles ESP32 module GPIOs with board pins_
 | IO2 | 14 |  I/O/T | GPIO2, __ADC1_CH2__, FSPIQ |
 | IO1 | 15 |  I/O/T | GPIO1, __ADC1_CH1__, XTAL_32K_N |
 | IO0 | 16 |  I/O/T | GPIO0, __ADC1_CH0__, XTAL_32K_P |
+
+### ESP32-C3 Current Consumption Characteristics
+
+|  Mode  |  Peak (mA)  |
+|  ---  |  ---  |
+| RF working |  345mA  |
+| Modem sleep[ the CPU is powered on @ 160 MHz |  20mA  |
+| Light sleep |  130 uA  |
+| Deep sleep; RTC timer + RTC memory |  5 uA  |
+| Power off |  1 uA  |
 
 ## Components List (Bill of Materials)
 
