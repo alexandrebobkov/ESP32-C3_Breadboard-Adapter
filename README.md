@@ -56,6 +56,24 @@ _The table below reconciles ESP32 module GPIOs with board pins_
 
 | GPIO | Physical Pin | Description |
 | --- | --- | --- |
+| EN | 1 | |
+| IO4 | 2 | |
+| IO5 | 3 | |
+| IO6 | 4 | |
+| IO8 | 5 | |
+| IO7 | 6 | |
+| IO10 | 7 | |
+| IO9 | 8 | |
+| USB_D+ | 9 | |
+| RxD | 10 | |
+| USB_D- | 11 | |
+| TxD | 12 | |
+| IO3 | 13 | |
+| IO2 | 14 | |
+| IO1 | 15 | |
+| IO0 | 16 | |
+
+
 
 
 ## Components List (Bill of Materials)
