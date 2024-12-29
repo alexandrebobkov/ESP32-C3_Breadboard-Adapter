@@ -58,7 +58,7 @@ During the chip's system reset, the latches of strapping pins samle re voltage l
 
 ### GPIOs & Pins
 
-<img alt="ESP32-Node PCB" src="https://github.com/alexandrebobkov/ESP32-C3_Breadboard-Adapter/blob/main/assets/ESP32-C3-BreadBoardAdapterPinout.png" width="50%"/>
+<img alt="ESP32-Node PCB" src="https://github.com/alexandrebobkov/ESP32-C3_Breadboard-Adapter/blob/main/assets/ESP32-C3-BreadBoardAdapterPinout.png" width="75%"/>
 
 _The table below reconciles wiring of ESP32 module GPIOs with board pins._
 
