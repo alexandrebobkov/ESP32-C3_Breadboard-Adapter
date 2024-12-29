@@ -68,10 +68,10 @@ _The table below reconciles wiring of ESP32 module GPIOs with board pins._
 | IO4 | 2 | I/O/T | GPIO4, __ADC1_CH4__, FSPIHD, MTMS  |
 | IO5 | 3 | I/O/T | GPIO5, __ADC2_CH0__, FSPIWP, MTDI |
 | IO6 | 4 | I/O/T | GPIO6, FSPICLK, MTCK |
-| IO8 | 5 | I/O/T | GPIO8 |
+| IO8 | 5 | I/O/T | GPIO8, __SDA__ |
 | IO7 | 6 | I/O/T | GPIO7, FSPDI, MTDO |
 | IO10 | 7 | I/O/T | GPIO10, FSPICS0 |
-| IO9 | 8 | I/O/T | GPIO9 |
+| IO9 | 8 | I/O/T | GPIO9, __SCL__ |
 | USB_D+ | 9 | I/O/T | GOIO19, __USB D+__ |
 | RxD | 10 |  I/O/T | GPIO20, __U0RxD__ |
 | USB_D- | 11 |  I/O/T | GPIO18, __USB D-__ |
