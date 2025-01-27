@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: home
 title: "ESP32-C3 Breadboard Adapter"
 ---
 
