@@ -5,7 +5,7 @@ title: "ESP32-C3 Breadboard Adapter"
 
 # ESP32-C3 Breadboard Power Adapter
 
-[Schematic]({% link schematic.md %})
+<a href="{{% link schematic.md %}}">Schematic</a>
 
 <ul>
   {% for post in site.posts %}
