@@ -119,12 +119,21 @@ Smart speakers
 
 ## I2C Pins
 
-The schematic excerpt provided below illustrates the wiring configuration for the __SDA__ and __SCL__ lines. Specifically, the __SDA__ line is connected to _GPIO 8_, while the __SCL__ line is connected to _GPIO 9_ on the ESP32-S3 module.
-
-<img src="assets/ESP32-Uno-Board-Module-Pinout.png" width="50%"/>
-
-The image of the PCB board below depicts the physical locations of the __SDA__ and __SCL__ terminals.
+The schematic excerpt provided below illustrates the wiring configuration for the __SDA__ and __SCL__ lines. Specifically, the __SDA__ line is connected to _GPIO 18_, while the __SCL__ line is connected to _GPIO 19_ on the ESP32-C3 Wroom module. The image of the PCB board below depicts the physical locations of the __SDA__ and __SCL__ terminals.
 <img src="assets/ESP32-C3-BreadBoardAdapterPinout.png" width="50%"/>
+
+``` C
+i2c_config_t conf = {
+    .mode = I2C_MODE_MASTER,
+    .sda_io_num = 18,
+    .scl_io_num = 19,
+    .sda_pullup_en = GPIO_PULLUP_ENABLE,
+    .scl_pullup_en = GPIO_PULLUP_ENABLE,
+    .master.clk_speed = 100000,
+};
+i2c_param_config(I2C_NUM_0, &conf);
+i2c_driver_install(I2C_NUM_0, conf.mode, 0, 0, 0);
+```
 
 ### Micropython LED Blinky Code
 
