@@ -15,4 +15,6 @@ title: "Schematic"
 | C1, C2  | 1uF  | Capacitor  |  |
 | C4  | 10uF  | Capacitor  | |
 
+<img src="assets/ESP32-C3-BreadBoardAdapter_F.png"/>
+
 [home](index.md)
