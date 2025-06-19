@@ -8,7 +8,7 @@ title: "Schematic"
 
 <img src="assets/ESP32-C3_Schematic.png" width="100%"/>
 
-<a href="assets/ESP32C3_Breadboard-Adapter_Schematic.pdf">Download ESP32-C3 Breadboard Development Board Schematic (PDF)</a>
+You may download <a href="assets/ESP32C3_Breadboard-Adapter_Schematic.pdf">ESP32-C3 Breadboard Development Board Schematic (PDF)</a>.
 
 |  Component  |  Value  |  Description  |  Details  |
 |  ---  |  ---  |  ---  |  ---  |
