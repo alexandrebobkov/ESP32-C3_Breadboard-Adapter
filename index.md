@@ -113,7 +113,11 @@ Smart speakers
 
 ## I2C Pins
 
-The schematic excerpt provided below illustrates the wiring configuration for the __SDA__ and __SCL__ lines. Specifically, the __SDA__ line is connected to _GPIO 8_, while the __SCL__ line is connected to _GPIO 9_ on the ESP32-C3 Wroom module. The image of the PCB board below depicts the physical locations of the __SDA__ and __SCL__ terminals.
+The schematic excerpt provided below illustrates the wiring configuration for the __SDA__ and __SCL__ lines. Specifically, the __SDA__ line is connected to _GPIO 8_, while the __SCL__ line is connected to _GPIO 9_ on the ESP32-C3 Wroom module. 
+
+<img src="ESP32-C3-Breadboard-USB-C.png" width=90%"/>
+
+The image of the PCB board below depicts the physical locations of the __SDA__ and __SCL__ terminals.
 
 <img src="assets/ESP32-C3-BreadBoardAdapterPinout.png" width="50%"/>
 
