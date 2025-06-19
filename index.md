@@ -124,6 +124,12 @@ Smart appliances
 Smart control panels
 Smart speakers
 
+## Reserver GPIOs and Pins
+
+|  GPIO  |  ESP32-C3 Module Pin  |  Breadboard Pin  |  Designation  |
+|  ---  |  ---  |  ---  |  ---  |
+| EN  | 1  | 2  | Enable pin  |
+
 ## I2C Pins
 
 The schematic excerpt provided below illustrates the wiring configuration for the __SDA__ and __SCL__ lines. Specifically, the __SDA__ line is connected to _GPIO 8_, while the __SCL__ line is connected to _GPIO 9_ on the ESP32-C3 Wroom module. 
