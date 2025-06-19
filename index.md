@@ -75,10 +75,9 @@ __Peripherals:__
   - GPIOs: Up to 22 GPIOs, including 4 strapping GPIOs
   - Interfaces:
     - SPI
-    - two __UART__
+    - Two __UART__
     - __I2C__
     - __I2S__
-    - Remote control
     - __LED PWM__, up to 6 channels
     - Full-speed USB 2.0 OTG
     - USB Serial/JTAG controller
