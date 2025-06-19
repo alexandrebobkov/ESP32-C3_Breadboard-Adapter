@@ -47,7 +47,7 @@ The ESP32-S3 UNO Development Board offers robust connectivity options, including
 Combining the ESP32-S3 UNO with MicroPython opens up a wide range of applications, from simple sensor monitoring to complex automation systems. The versatility of this fusion allows developers to explore diverse project ideas and innovate freely.
 
 9. __Educational Value:__
-MicroPython's simplicity and the ESP32-S3 UNO's capabilities make this combination an excellent educational tool. It provides a practical platform for learning programming, electronics, and IoT concepts, fostering a deeper understanding of technology.
+MicroPython's simplicity and the ESP32-C3 UNO's capabilities make this combination an excellent educational tool. It provides a practical platform for learning programming, electronics, and IoT concepts, fostering a deeper understanding of technology.
 
 10. __Cost-Effective Development:__
 Both the ESP32-S3 UNO Development Board and MicroPython are cost-effective solutions, making them accessible to hobbyists, educators, and professionals alike. This affordability encourages experimentation and innovation without significant financial investment.
