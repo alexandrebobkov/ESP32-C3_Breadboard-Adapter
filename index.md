@@ -55,12 +55,11 @@ Both the ESP32-C3 Development Board and MicroPython are cost-effective solutions
 
 ## Features and Specifications of the ESP32-C3 WROOM Module
 __Core Components:__
-  - Microprocessor: Xtensa® dual-core 32-bit LX7 microprocessor, operating up to 240 MHz.
+  - Microprocessor: RISC-V® single-core 32-bit microprocessor, operating up to 160 MHz.
   - Memory:
     - 384 KB ROM
-    - 512 KB SRAM
-    - 16 KB SRAM in RTC
-    - Up to 16 MB PSRAM
+    - 400 KB SRAM
+    - 8 KB SRAM in RTC
 
 __Connectivity:__
   - Wi-Fi:
