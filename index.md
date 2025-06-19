@@ -64,34 +64,30 @@ __Core Components:__
 __Connectivity:__
   - Wi-Fi:
     - 802.11b/g/n, up to 150 Mbps (802.11n), frequency range: 2412 ~ 2484 MHz
-    - Features: A-MPDU and A-MSDU aggregation, 0.4 μs guard interval support
+    - Four virtual Wi-Fi interfaces
+    - simultaneous support SoftAP mode, Station + SoftAP mode and promiscuous mode
   - Bluetooth:
     - Bluetooth 5, Bluetooth mesh, 125 Kbps, 500 Kbps, 1 Mbps, 2 Mbps
     - Features: Advertising extensions, multiple advertisement sets, channel selection algorithm #2
   - Co-existence mechanism: Internal co-existence mechanism between Wi-Fi and Bluetooth to share the same antenna
 
 __Peripherals:__
-  - GPIOs: Up to 36 GPIOs, including 4 strapping GPIOs
+  - GPIOs: Up to 22 GPIOs, including 4 strapping GPIOs
   - Interfaces:
     - SPI
-    - LCD interface
-    - Camera interface
-    - __UART__
+    - two __UART__
     - __I2C__
     - __I2S__
     - Remote control
-    - __Pulse counter__
-    - __LED PWM__
+    - __LED PWM__, up to 6 channels
     - Full-speed USB 2.0 OTG
     - USB Serial/JTAG controller
-    - __MCPWM__
-    - SDIO host controller
-    - GDMA
     - TWAI® controller (compatible with ISO 11898-1)
-    - ADC
+    - 12-bit __ADC__, up to 6 channels
     - Touch sensor
     - Temperature sensor
-    - Timers and watchdogs
+    - Two 54-bit general purpose timers
+    - Three digital and one analog watchdog timers
 
 __Integrated Components:__
   - Crystal Oscillator: 40 MHz
