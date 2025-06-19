@@ -10,7 +10,7 @@ title: "ESP32-C3 Breadboard Adapter"
 <p>Unlock a world of innovative possibilities with the ESP32-C3 Breadboard Development Board. This versatile platform empowers developers to create cutting-edge applications, leveraging its advanced features and robust performance. Whether you're working on IoT projects, embedded systems, or automation tasks, the ESP32-C3 Development Board offers the flexibility, power and quick implementation needed to bring your ideas to life.</p>
 <p>Explore its capabilities and push the boundaries of your creativity and technical expertise.</p>
 
-<img src="assets/ESP32-C3-BreadBoardAdapter-001.jpg" width="35%"/>
+<img src="assets/ESP32-C3-BreadBoardAdapter-001.jpg" width="75%"/>
 
 [Schematic](schematic.md)
 
