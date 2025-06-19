@@ -23,7 +23,11 @@ title: "ESP32-C3 Breadboard Adapter"
   <li>on-board RESET and BOOT push-button switches</li>
 </ul>
 
+// Schematic
+
 [Schematic](schematic.md)
+
+// Specifications Details
 
 [Specs](specs.md)
 
