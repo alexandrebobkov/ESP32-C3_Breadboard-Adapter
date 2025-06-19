@@ -12,6 +12,17 @@ title: "ESP32-C3 Breadboard Adapter"
 
 <img src="assets/ESP32-C3-BreadBoardAdapter-001.jpg" width="100%"/>
 
+<h2>Features:</h2>
+<ul>
+  <li>compact size; requires a very little space on a breadboard</li>
+  <li>flash a firmware without external adapters as you work with your project</li>
+  <li>supplies 3.3V or 5V to the breadboard power rails</li>
+  <li>can be powered either by USB-C or external powersupply</li>
+  <li>GPIOs are arranged into 4 groups for easier indentification</li>
+  <li>on-board power and user-controlled LEDs</li>
+  <li>on-board RESET and BOOT push-button switches</li>
+</ul>
+
 [Schematic](schematic.md)
 
 [Specs](specs.md)
@@ -71,6 +82,8 @@ __Connectivity:__
     - Features: Advertising extensions, multiple advertisement sets, channel selection algorithm #2
   - Co-existence mechanism: Internal co-existence mechanism between Wi-Fi and Bluetooth to share the same antenna
 
+__Security:__
+  - RSA-3072-based secure boot and the AES-128/256-XTS flash encryption
 __Peripherals:__
   - GPIOs: Up to 22 GPIOs, including 4 strapping GPIOs
   - Interfaces:
