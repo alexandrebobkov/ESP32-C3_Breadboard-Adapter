@@ -12,7 +12,7 @@ title: "ESP32-C3 Breadboard Adapter"
 
 <img src="assets/ESP32-C3-BreadBoardAdapter-001.jpg" width="100%"/>
 
-<h2>Features:</h2>
+<h2>Key Features:</h2>
 <ul>
   <li>compact size; requires a very little space on a breadboard</li>
   <li>flash a firmware without external adapters as you work with your project</li>
