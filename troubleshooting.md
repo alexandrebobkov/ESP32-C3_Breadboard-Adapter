@@ -25,5 +25,7 @@ Possible causes:
 
 ### Issues during uploading the firmware
 Possible causes:
-  - ESP32-S3 Module was not properly soldered; some pads have poor connection. Consider re-flowing/re-soldering
+  - ESP32-C3 Module was not properly soldered; some pads have poor connection. Consider re-flowing/re-soldering
   - USB-C reciptacle was not properly soldered; some pads have poor connection. Consider re-flowing/re-soldering
+
+  [home](index.md)
