@@ -10,6 +10,9 @@ title: "Troubleshooting Steps"
 
 ## List of Symptoms:
 
+### $ ls /dev doesn't list ESP32-C3 serial device
+### Windows Devices Manager doesn't list ESP32-C3 serial device
+
 ### Thonny shows error while flashing firmware (or Micropython) using Windows
 Possible causes:
   - Windows is blocking access to Espressif Serial device
