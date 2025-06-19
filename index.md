@@ -20,7 +20,7 @@ title: "ESP32-C3 Breadboard Adapter"
 
 ## Compatibility with MicroPython
 
-Integrating the ESP32-C3 UNO Development Board with MicroPython offers several compelling benefits:
+Integrating the ESP32-C3 Development Board with MicroPython offers several compelling benefits:
 
 1. __Ease of Use:__
 MicroPython simplifies the development process by allowing developers to write code in Python, a high-level, easy-to-read programming language. This reduces the learning curve for beginners and accelerates development for experienced programmers.
