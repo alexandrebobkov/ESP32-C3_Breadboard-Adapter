@@ -124,8 +124,8 @@ The image of the PCB board below depicts the physical locations of the __SDA__ a
 ``` C
 i2c_config_t conf = {
     .mode = I2C_MODE_MASTER,
-    .sda_io_num = 18,
-    .scl_io_num = 19,
+    .sda_io_num = 8,
+    .scl_io_num = 9,
     .sda_pullup_en = GPIO_PULLUP_ENABLE,
     .scl_pullup_en = GPIO_PULLUP_ENABLE,
     .master.clk_speed = 100000,
