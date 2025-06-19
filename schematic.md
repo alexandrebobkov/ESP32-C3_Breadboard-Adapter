@@ -8,7 +8,9 @@ title: "Schematic"
 
 <img src="assets/ESP32-C3_Schematic.png" width="100%"/>
 
-You may download <a href="assets/ESP32C3_Breadboard-Adapter_Schematic.pdf">ESP32-C3 Breadboard Development Board Schematic (PDF)</a>.
+You may download ESP32-C3 Breadboard Development Board Schematic PDF file <a href="assets/ESP32C3_Breadboard-Adapter_Schematic.pdf">from this link</a>.
+
+KiCAD schematic, PCB, symbols and footprint files.
 
 |  Component  |  Value  |  Description  |  Details  |
 |  ---  |  ---  |  ---  |  ---  |
