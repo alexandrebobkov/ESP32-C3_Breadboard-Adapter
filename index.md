@@ -124,7 +124,7 @@ The schematic excerpt provided below illustrates the wiring configuration for th
 <img src="assets/ESP32-Uno-Board-Module-Pinout.png" width="50%"/>
 
 The image of the PCB board below depicts the physical locations of the __SDA__ and __SCL__ terminals.
-<img src="assets/ESP32-Uno-Board-GPIO.png" width="50%"/>
+<img src="assets/ESP32-C3-BreadBoardAdapterPinout.png" width="50%"/>
 
 ### Micropython LED Blinky Code
 
