@@ -129,6 +129,12 @@ Smart speakers
 |  GPIO  |  ESP32-C3 Module Pin  |  Breadboard Pin  |  Designation  |
 |  ---  |  ---  |  ---  |  ---  |
 | EN  | 1  | 2  | Enable pin  |
+| IO9  | 8  | 8  | Strapping pin  |
+| IO8  | 5  | 7  | Strapping pin |
+| IO18  | 11  | 13  | USB D-  |
+| IO19  | 9  | 14  | USB D+  |
+| IO10  | 7 | 10  | On-board user LED  |
+| IO3  | 13  | 15  | On-board user tactile switch  |
 
 ## I2C Pins
 
