@@ -4,7 +4,8 @@ show_downloads: true
 google_analytics:
 theme: jekyll-theme-architect
 baseurl: "/ESP32-C3_Breadboard-Adapter" # the subpath of your site, e.g. /blog
-url: "https://alexandrebobkov.github.io/" # the base hostname & protocol for your site
+#url: "https://alexandrebobkov.github.io/" # the base hostname & protocol for your site
+url: "https://projects.techquadbit.net/" # the base hostname & protocol for your site
 permalink: /:month-:day-:year/:title.html
 
 plugins:
