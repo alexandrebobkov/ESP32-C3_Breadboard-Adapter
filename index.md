@@ -1,13 +1,13 @@
 ---
 layout: default
-title: "ESP32-C3 Breadboard Adapter"
+title: "ESP32-C3 bitBoard | DevBoard & Breadboard Power Supply Combo"
 ---
 
 {{ page.title }}
 ================
 
-<i>Discover new opportunities with the ESP32-C3 UNO Development Board</i>
-<p>Unlock a world of innovative possibilities with the ESP32-C3 Breadboard Development Board. This versatile platform empowers developers to create cutting-edge applications, leveraging its advanced features and robust performance. Whether you're working on IoT projects, embedded systems, or automation tasks, the ESP32-C3 Development Board offers the flexibility, power and quick implementation needed to bring your ideas to life.</p>
+<i>Discover new opportunities with the ESP32-C3 bitBoard</i>
+<p>Unlock a world of innovative possibilities with the ESP32-C3 bitBoard. This versatile platform empowers developers to create cutting-edge applications, leveraging its advanced features and robust performance. Whether you're working on IoT projects, embedded systems, or automation tasks, the ESP32-C3 bitBoard offers the flexibility, power and quick implementation needed to bring your ideas to life.</p>
 <p>Explore its capabilities and push the boundaries of your creativity and technical expertise.</p>
 
 <img src="assets/ESP32-C3-BreadBoardAdapter-001.jpg" width="100%"/>
@@ -35,7 +35,7 @@ title: "ESP32-C3 Breadboard Adapter"
 
 ## Compatibility with MicroPython
 
-Integrating the ESP32-C3 Development Board with MicroPython offers several compelling benefits:
+Integrating the ESP32-C3 bitBoard with MicroPython offers several compelling benefits:
 
 1. __Ease of Use:__
 MicroPython simplifies the development process by allowing developers to write code in Python, a high-level, easy-to-read programming language. This reduces the learning curve for beginners and accelerates development for experienced programmers.
@@ -130,7 +130,7 @@ Smart speakers
 
 ## Reserver GPIOs and Pins
 
-|  GPIO  |  ESP32-C3 Module Pin  |  Breadboard Pin  |  Designation  |
+|  GPIO  |  ESP32-C3 Module Pin  |  bitBoard Pin  |  Designation  |
 |  ---  |  ---  |  ---  |  ---  |
 | EN  | 1  | 2  | Enable pin  |
 | IO9  | 8  | 8  | Strapping pin  |
