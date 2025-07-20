@@ -3,8 +3,11 @@ description: ESP32 IoT gadgets by Alexander B
 show_downloads: true
 google_analytics:
 theme: jekyll-theme-architect
-baseurl: "/ESP32-C3_Breadboard-Adapter" # the subpath of your site, e.g. /blog
+# GitHub hosted
+#baseurl: "/ESP32-C3_Breadboard-Adapter" # the subpath of your site, e.g. /blog
 #url: "https://alexandrebobkov.github.io/" # the base hostname & protocol for your site
+# Custom domain name
+baseurl: "/"
 url: "https://projects.techquadbit.net/" # the base hostname & protocol for your site
 permalink: /:month-:day-:year/:title.html
 
